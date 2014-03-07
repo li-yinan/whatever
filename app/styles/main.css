@@ -1,0 +1,7 @@
+/* Space out content a bit */
+body {
+  background: gray;
+}
+.carousel-inner img {
+    width: 100%;
+}
