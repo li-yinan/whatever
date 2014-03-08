@@ -4,8 +4,8 @@ angular.module('whateverApp')
   .service('Data', ["$http", function Data($http) {
     // AngularJS will instantiate a singleton by calling "new" on this function
     var exports = {};
-    var request = function(method, url, callback) {
-        $http[method](url).success(function(data) {
+    var request = function(method, url, param, callback) {
+        $http[method](url, param).success(function(data) {
             if(data.status == 0) {
                 if(typeof callback == "function") {
                     callback(data.data);
@@ -18,12 +18,17 @@ angular.module('whateverApp')
         });
     }
 
-    exports.get = function(url,callback) {
-        request("get", url, callback);
+    exports.get = function(url, param, callback) {
+        if(!/\?/.test(url)) {
+            url += "?" + $.param(param);
+        } else {
+            url += "&" + $.param(param);
+        }
+        request("get", url, {}, callback);
     };
 
-    exports.post = function(url,callback) {
-        request("post", url, callback);
+    exports.post = function(url, param, callback) {
+        request("post", url, param, callback);
     };
     return exports;
   }]);

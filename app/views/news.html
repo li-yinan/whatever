@@ -12,7 +12,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div ng-class="{item:true,active:!$index}" ng-repeat="item in data.banner">
-            <a ng-href="#/picnewsdetail/{{item.id}}">
+            <a ng-href="#/picdetail/{{item.id}}">
                 <img ng-src="{{item.pic}}">
             </a>
             <div class="carousel-caption">
@@ -32,7 +32,7 @@
 
 <!-- normal news -->
 <div class="normalNews">
-    <a ng-href="#/textnewsdetail/{{item.id}}" ng-repeat="item in data.normal">
+    <a ng-href="#/newsdetail/{{item.id}}" ng-repeat="item in data.normal">
     <div class="media news-item">
         <img class="pull-left media-object" ng-src="{{item.pic}}"/>
         <div class="media-body">

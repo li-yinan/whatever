@@ -16,13 +16,9 @@ angular.module('whateverApp', [
         templateUrl: 'views/news.html',
         controller: 'NewsCtrl'
       })
-      .when('/picnewsdetail/:id', {
-        templateUrl: 'views/picnewsdetail.html',
-        controller: 'PicnewsdetailCtrl'
-      })
-      .when('/textnewsdetail/:id', {
-        templateUrl: 'views/textnewsdetail.html',
-        controller: 'TextnewsdetailCtrl'
+      .when('/newsdetail/:id', {
+        templateUrl: 'views/newsdetail.html',
+        controller: 'NewsdetailCtrl'
       })
       .when('/test', {
         templateUrl: 'views/test.html',

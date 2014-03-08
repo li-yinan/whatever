@@ -13,7 +13,7 @@ angular.module('whateverApp')
                 scope.speed = "1";
                 //set text display in center
                 scope.align = "middle";
-                Data.get(url.scrollnews, function(data) {
+                Data.get(url.scrollnews, {}, function(data) {
                     scope.records = data;
                 });
             }

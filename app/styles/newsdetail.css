@@ -1,0 +1,13 @@
+.news-detail {
+    padding:10px;
+}
+.news-detail-title {
+    font-size: 30px;
+}
+.news-detail-pic {
+    width: 100%;
+    height: auto;
+}
+.news-detail-content {
+    font-size: 20px;
+}
