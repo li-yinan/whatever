@@ -1,7 +1,8 @@
 /* Space out content a bit */
 body {
-  background: gray;
+    background-image: url("bg/bg.png");
 }
-.carousel-inner img {
-    width: 100%;
+
+a:hover, a:active {
+    text-decoration: none;
 }
