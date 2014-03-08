@@ -1,10 +1,11 @@
 'use strict';
 
 angular.module('whateverApp')
-  .service('Data', ["$http", function Data($http) {
+  .service('Data', ["$http", "remoteServerDomain", function Data($http, domain) {
     // AngularJS will instantiate a singleton by calling "new" on this function
     var exports = {};
     var request = function(method, url, param, callback) {
+        url = domain + url;
         $http[method](url, param).success(function(data) {
             if(data.status == 0) {
                 if(typeof callback == "function") {
