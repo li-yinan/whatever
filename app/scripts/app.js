@@ -20,6 +20,10 @@ angular.module('whateverApp', [
         templateUrl: 'views/newsdetail.html',
         controller: 'NewsdetailCtrl'
       })
+      .when('/picdetail/:id', {
+        templateUrl: 'views/picdetail.html',
+        controller: 'PicdetailCtrl'
+      })
       .when('/test', {
         templateUrl: 'views/test.html',
         controller: 'TestCtrl'
