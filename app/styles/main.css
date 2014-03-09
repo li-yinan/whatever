@@ -1,6 +1,7 @@
 /* Space out content a bit */
 body {
     background-image: url("bg/bg.png");
+    padding-bottom: 50px;
 }
 
 a:hover, a:active {

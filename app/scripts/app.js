@@ -24,6 +24,10 @@ angular.module('whateverApp', [
         templateUrl: 'views/picdetail.html',
         controller: 'PicdetailCtrl'
       })
+      .when('/ad/:id', {
+        templateUrl: 'views/ad.html',
+        controller: 'AdCtrl'
+      })
       .when('/test', {
         templateUrl: 'views/test.html',
         controller: 'TestCtrl'
