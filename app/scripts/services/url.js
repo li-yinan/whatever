@@ -3,9 +3,11 @@
 angular.module('whateverApp')
   .value('dataUrl', {
       scrollnews: "/mock/scrollnews.json",
+      index: "/mock/index.json",
       news: "/mock/news.json",
       newsDetail: "/mock/newsdetail.json",
       picDetail: "/mock/picdetail.json"
+      //scrollnews: "/common/ad.php",
       //news: "/news/init.php",
       //newsDetail: "/news/text_news_details.php",
       //picDetail: "/news/pic_news_details.php"

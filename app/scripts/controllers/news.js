@@ -6,7 +6,7 @@ angular.module('whateverApp')
           $scope.data = data;
           setTimeout(function() {
               $('.carousel').carousel({
-                  interval: 3000
+                  interval: 2000
               });
           }, 0);
       });

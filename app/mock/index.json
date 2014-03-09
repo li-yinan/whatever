@@ -1,0 +1,16 @@
+{
+    "data": {
+        "slide": [{
+            "id":1,
+            "pic":"/mock/resource/baidu.png"
+        },{
+            "id":2,
+            "pic":"/mock/resource/a.jpg"
+        },{
+            "id":3,
+            "pic":"/mock/resource/a.jpg"
+        }]
+    },
+    "status":0,
+    "statusInfo":""
+}
