@@ -6,6 +6,9 @@ angular.module('whateverApp')
       news: "/mock/news.json",
       newsDetail: "/mock/newsdetail.json",
       picDetail: "/mock/picdetail.json"
+      //news: "/news/init.php",
+      //newsDetail: "/news/text_news_details.php",
+      //picDetail: "/news/pic_news_details.php"
   })
-  //.value('remoteServerDomain',"http://localhost:8848/");
-  .value('remoteServerDomain',"");
+  .value('remoteServerDomain',"http://localhost:8848/");
+  //.value('remoteServerDomain',"http://42.51.153.179");

@@ -1,8 +1,11 @@
-marquee {
-    height: 1em;
+.scrollnews {
+    height: 2em;
+    background-color: #222;
 }
+
 .marquee-item {
     display:block;
     height: 1em;
     margin: 5px 0;
+    color: #fff;
 }

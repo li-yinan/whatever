@@ -19,11 +19,21 @@
     <!-- endbuild -->
   </head>
   <body ng-app="whateverApp">
+  <!--
   <div style="position:fixed;bottom:0;font-size:48;">
-      <a href="http://192.168.1.120:8848#/news" style="float:left;margin:0 5px;">news</a>
-      <a href="http://192.168.1.120:8848#/test" style="float:left;margin:0 5px;">test</a>
-      <a href="http://192.168.1.120:8848#/" style="float:left;margin:0 5px;">index</a>
+      <a href="#/news" style="float:left;margin:0 5px;">news</a>
+      <a href="#/test" style="float:left;margin:0 5px;">test</a>
+      <a href="#/" style="float:left;margin:0 5px;">index</a>
   </div>
+  -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="javascript:history.go(-1);">后退</a></li>
+          <li><a href="#/">首页</a></li>
+          <li><a href="#/news">新闻</a></li>
+      </ul>
+  </nav>
 
       <scrollnews></scrollnews>
     <div ng-view=""></div>

@@ -12,9 +12,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div ng-class="{item:true,active:!$index}" ng-repeat="item in data">
-            <a ng-href="#/picdetail/{{item.id}}">
-                <img ng-src="{{item.pic}}">
-            </a>
+            <img ng-src="{{item.pic}}">
             <div class="carousel-caption">
                 {{item.text}}
             </div>
