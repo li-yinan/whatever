@@ -5,7 +5,7 @@ angular.module('whateverApp')
       Data.get(url.news, {}, function(data) {
           $scope.data = data;
           setTimeout(function() {
-              $('.carousel').carousel({
+              $('#carousel').carousel({
                   interval: 2000
               });
           }, 0);

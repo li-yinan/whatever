@@ -1,6 +1,16 @@
 {
     "data": {
-        "slide": [{
+        "slideAd": [{
+            "id":1,
+            "pic":"/mock/resource/baidu.png"
+        },{
+            "id":2,
+            "pic":"/mock/resource/a.jpg"
+        },{
+            "id":3,
+            "pic":"/mock/resource/a.jpg"
+        }],
+        "bigAd": [{
             "id":1,
             "pic":"/mock/resource/baidu.png"
         },{
