@@ -3,9 +3,37 @@
 }
 
 .normalNews {
-    padding: 9px 14px;
+    padding: 5px 10px;
+    background-color: #eee;
+}
+.normalNews a {
+    display: block;
+    overflow: hidden;
+    padding: 5px 0;
 }
 
-.normalNews .btn {
-    margin-top: 5px;
+.normalNews a:not(:last-child) {
+    border-bottom: solid 1px #ccc;
+}
+
+.normalNews img {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+.normalNews .news-text {
+    margin-left: 20%;
+    padding-left: 5px;
+}
+
+.normalNews h4,
+.normalNews p {
+    margin: 0;
+}
+.normalNews h4 {
+    color: #555;
+}
+.normalNews p {
+    font-size: 12px;
 }

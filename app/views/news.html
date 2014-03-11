@@ -33,12 +33,10 @@
 <!-- normal news -->
 <div class="normalNews">
     <a ng-href="#/newsdetail/{{item.id}}" ng-repeat="item in data.normal">
-    <div class="media news-item">
-        <img class="pull-left media-object" ng-src="{{item.pic}}"/>
-        <div class="media-body">
-            <h4 class="media-heading">{{item.title}}</h4>
+        <img class="" ng-src="{{item.pic}}"/>
+        <div class="news-text">
+            <h4>{{item.title}}</h4>
             <p>{{item.abstract}}</p>
         </div>
-    </div>
     </a>
 </div>

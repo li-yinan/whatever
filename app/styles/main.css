@@ -3,6 +3,7 @@ body {
     /*
     background-image: url("bg/bg.png");
     */
+    padding-top: 30px;
     padding-bottom: 50px;
     font-family: 黑体;
 }
@@ -67,6 +68,15 @@ a, a:hover, a:active {
     margin: 0 auto;
     padding: 10px 0;
     background-color: #fff;
+}
+
+.row3 {
+    background-color: #eee;
+}
+
+.row3 div {
+    margin: 5px;
+    margin-top: 0;
 }
 
 .row3 img {
