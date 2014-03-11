@@ -1,84 +1,74 @@
 <!-- slide news -->
-<div class="row">
-    <div id="indexAd" class="carousel slide col-xs-12">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic"
-            data-slide-to="{{$index}}"
-            ng-class="{active:!$index}"
-            ng-repeat="item in data.slideAd">
-            </li>
-        </ol>
+<div id="indexAd" class="carousel slide col-xs-12">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic"
+        data-slide-to="{{$index}}"
+        ng-class="{active:!$index}"
+        ng-repeat="item in data.slideAd">
+        </li>
+    </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div ng-class="{item:true,active:!$index}" ng-repeat="item in data.slideAd">
-                <a ng-href="#/picdetail/{{item.id}}">
-                    <img ng-src="{{item.pic}}">
-                </a>
-            </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div ng-class="{item:true,active:!$index}" ng-repeat="item in data.slideAd">
+            <a ng-href="#/ad/{{item.id}}">
+                <img ng-src="{{item.pic}}">
+            </a>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" data-target="#carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" data-target="#carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
     </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" data-target="#carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" data-target="#carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
 </div>
 
 <!-- icons row 1 -->
-<div class="row">
-    <div class="col-xs-3">
-        <a href="#/news" class="btn btn-default btn-block">
-            <span class="text-center glyphicon glyphicon-book"></span>
-            <p class="text-center">新闻</p>
-        </a>
-    </div>
-    <div class="col-xs-3">
-        <a href="#/" class="btn btn-default btn-block">
-            <span class="text-center glyphicon glyphicon-book"></span>
-            <p class="text-center">水电</p>
-        </a>
-    </div>
-    <div class="col-xs-3">
-        <a href="#/" class="btn btn-default btn-block">
-            <span class="text-center glyphicon glyphicon-book"></span>
-            <p class="text-center">干洗</p>
-        </a>
-    </div>
-    <div class="col-xs-3">
-        <a href="#/" class="btn btn-default btn-block">
-            <span class="text-center glyphicon glyphicon-book"></span>
-            <p class="text-center">娱乐</p>
-        </a>
-    </div>
+<div class="row row1">
+    <a href="#/news" class="icon-btn">
+        <img src="/images/chat.png">
+        <p>新闻</p>
+    </a>
+    <a href="#/" class="icon-btn">
+        <img src="/images/chat.png">
+        <p>水电</p>
+    </a>
+    <a href="#/" class="icon-btn">
+        <img src="/images/chat.png">
+        <p>干洗</p>
+    </a>
+    <a href="#/" class="icon-btn">
+        <img src="/images/chat.png">
+        <p>娱乐</p>
+    </a>
 </div>
 <!-- icons row 2 -->
-<div class="row">
-    <div class="col-xs-4">
-        <a href="#/" class="btn btn-default btn-block">
-            <span class="text-center glyphicon glyphicon-book"></span>
-            <p class="text-center">网上超市</p>
-        </a>
-    </div>
-    <div class="col-xs-4">
-        <a href="#/" class="btn btn-default btn-block">
-            <span class="text-center glyphicon glyphicon-book"></span>
-            <p class="text-center">婚庆</p>
-        </a>
-    </div>
-    <div class="col-xs-4">
-        <a href="#/" class="btn btn-default btn-block">
-            <span class="text-center glyphicon glyphicon-book"></span>
-            <p class="text-center">酒水</p>
-        </a>
-    </div>
+<div class="row row2">
+    <a href="#/" class="icon-btn">
+        <div>
+            <img src="/images/android.png">
+            <p>网上超市</p>
+        </div>
+    </a>
+    <a href="#/" class="icon-btn">
+        <div>
+            <img src="/images/android.png">
+            <p>婚庆</p>
+        </div>
+    </a>
+    <a href="#/" class="icon-btn">
+        <div>
+            <img src="/images/android.png">
+            <p>酒水</p>
+        </div>
+    </a>
 </div>
 <!-- ad row -->
-<div class="row line-ad">
+<div class="row row3">
     <div ng-repeat="item in data.bigAd">
         <a ng-href="#ad/{{item.id}}">
             <img ng-src="{{item.pic}}" class="">

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/custom/bootstrap/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -19,25 +19,34 @@
     <!-- endbuild -->
   </head>
   <body ng-app="whateverApp">
-  <!--
-  <div style="position:fixed;bottom:0;font-size:48;">
-      <a href="#/news" style="float:left;margin:0 5px;">news</a>
-      <a href="#/test" style="float:left;margin:0 5px;">test</a>
-      <a href="#/" style="float:left;margin:0 5px;">index</a>
-  </div>
-  -->
-
-  <!-- 底部导航 -->
-  <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-      <ul class="nav navbar-nav">
-          <li class="active"><a href="javascript:history.go(-1);">后退</a></li>
-          <li><a href="#/">首页</a></li>
-          <li><a href="#/news">新闻</a></li>
-      </ul>
-  </nav>
-
-      <scrollnews></scrollnews>
+    <scrollnews></scrollnews>
     <div ng-view=""></div>
+    <div class="navbar">
+      <a href="javascript:history.go(-1);">
+        <img src="/images/chat.png">
+        <p>后退</p>
+      </a>
+      <a href="#/">
+        <img src="/images/chat.png">
+        <p>首页</p>
+      </a>
+      <a href="#/news">
+        <img src="/images/chat.png">
+        <p>新闻</p>
+      </a>
+      <a href="#/">
+        <img src="/images/chat.png">
+        <p>其他</p>
+      </a>
+      <a href="#/">
+        <img src="/images/chat.png">
+        <p>其他</p>
+      </a>
+      <a href="#/">
+        <img src="/images/chat.png">
+        <p>其他</p>
+      </a>
+    </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

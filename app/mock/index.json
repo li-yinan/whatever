@@ -2,17 +2,17 @@
     "data": {
         "slideAd": [{
             "id":1,
-            "pic":"/mock/resource/baidu.png"
+            "pic":"/images/dog.jpg"
         },{
             "id":2,
-            "pic":"/mock/resource/a.jpg"
+            "pic":"/images/dog.jpg"
         },{
             "id":3,
-            "pic":"/mock/resource/a.jpg"
+            "pic":"/images/dog.jpg"
         }],
         "bigAd": [{
             "id":1,
-            "pic":"/mock/resource/baidu.png"
+            "pic":"/images/dog.jpg"
         },{
             "id":2,
             "pic":"/mock/resource/a.jpg"

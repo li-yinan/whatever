@@ -4,17 +4,17 @@
             "id":1,
             "url":"http://www.baidu.com",
             "title":"轮播新闻测试1",
-            "pic":"/mock/resource/baidu.png"
+            "pic":"/images/dog.jpg"
         },{
             "id":2,
             "url":"http://www.baidu.com",
             "title":"轮播新闻测试2",
-            "pic":"/mock/resource/a.jpg"
+            "pic":"/images/dog.jpg"
         },{
             "id":3,
             "url":"http://www.baidu.com",
             "title":"轮播新闻测试3",
-            "pic":"/mock/resource/a.jpg"
+            "pic":"/images/dog.jpg"
         }],
         "normal": [{
             "id":4,
