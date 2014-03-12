@@ -1,6 +1,8 @@
 <div class="news-detail">
     <h2 class="news-detail-title">{{data.title}}</h2>
-    <h3 class="news-detail-abstract">{{data.abstract}}</h3>
+    <div class="news-detail-abstract">
+        <h3><span>摘要</span>{{data.abstract}}</h3>
+    </div>
     <img class="news-detail-pic"ng-src="{{data.pic}}"></img>
     <pre class="news-detail-content">{{data.text}}</pre>
 </div>

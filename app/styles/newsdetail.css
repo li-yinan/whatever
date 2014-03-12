@@ -1,14 +1,41 @@
 .news-detail {
     padding:10px;
+    background-color: #eee;
 }
+
 .news-detail-title {
-    font-size: 30px;
+    font-size: 24px;
+    margin: 0px;
+    font-weight: bold;
 }
+
+.news-detail-abstract {
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #ddd;
+}
+
+.news-detail-abstract span {
+    color: #fff;
+    font-size: 12px;
+    background-color: #4260b5;
+    line-height: 18px;
+    padding: 3px;
+    vertical-align: middle;
+    margin: 3px 3px 0 3px;
+}
+
+.news-detail-abstract h3 {
+    margin: 0;
+    padding: 0;
+}
+
 .news-detail-pic {
     width: 100%;
     height: auto;
 }
+
 .news-detail-content {
-    font-size: 20px;
+    font-size: 16px;
     background-color: transparent;
 }

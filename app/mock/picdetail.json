@@ -2,13 +2,13 @@
     "status": 0,
     "statusInfo": "success",
     "data": [{
-        "pic":"/mock/resource/a.jpg",
-        "text": "1一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
+        "pic":"/images/dog.jpg",
+        "text": "一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
+    },{
+        "pic":"/images/bg.png",
+        "text": "一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
     },{
         "pic":"/mock/resource/a.jpg",
-        "text": "2一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
-    },{
-        "pic":"/mock/resource/a.jpg",
-        "text": "3一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
+        "text": "一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
     }]
 }

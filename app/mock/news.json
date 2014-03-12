@@ -20,19 +20,19 @@
             "id":4,
             "url":"http://www.baidu.com",
             "title":"普通新闻测试1",
-            "abstract":"普通新闻测试1",
+            "abstract":"普通新闻测试1普通新闻测试1普通新闻测试1普通新闻测试1",
             "pic":"/mock/resource/a.jpg"
         },{
             "id":5,
             "url":"http://www.baidu.com",
             "title":"普通新闻测试2",
-            "abstract":"普通新闻测试2",
+            "abstract":"普通新闻测试2普通新闻测试2普通新闻测试2普通新闻测试2",
             "pic":"/mock/resource/a.jpg"
         },{
             "id":6,
             "url":"http://www.baidu.com",
             "title":"普通新闻测试3",
-            "abstract":"普通新闻测试3",
+            "abstract":"普通新闻测试3普通新闻测试3普通新闻测试3普通新闻测试3",
             "pic":"/mock/resource/a.jpg"
         }]
     },

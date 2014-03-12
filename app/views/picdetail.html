@@ -1,29 +1,20 @@
 <!-- slide news -->
-<div id="picDetail" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic"
-        data-slide-to="{{$index}}"
-        ng-class="{active:!$index}"
-        ng-repeat="item in data.banner">
-        </li>
-    </ol>
-
+<div id="picDetail">
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div ng-class="{item:true,active:!$index}" ng-repeat="item in data">
+    <div class="pic-item" ng-repeat="item in data" ng-show="$index==showNum">
+        <div class="img-container">
             <img ng-src="{{item.pic}}">
-            <div class="carousel-caption">
-                {{item.text}}
-            </div>
+        <div>
+        <div class="pic-describe">
+            {{$index+1}}/{{data.length}}  {{item.text}}
         </div>
     </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" data-target="#picDetail" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" data-target="#picDetail" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
+    <div class="operation">
+        <div class="arr left-arr" ng-click="clickLeft()">
+            <span></span>
+        </div>
+        <div class="arr right-arr" ng-click="clickRight()">
+            <span></span>
+        </div>
+    </div>
 </div>
