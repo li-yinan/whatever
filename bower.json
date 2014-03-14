@@ -4,7 +4,6 @@
   "dependencies": {
     "angular": "1.2.6",
     "jquery": "~1.10.2",
-    "bootstrap": "~3.0.3",
     "angular-resource": "1.2.6",
     "angular-cookies": "1.2.6",
     "angular-sanitize": "1.2.6",

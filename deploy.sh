@@ -1,6 +1,6 @@
 #!/bin/sh
 grunt build;
-cp -r dist ../app/www;
+cp -r dist/ ../app/www;
 cd ../app;
-phonegap build ios;
+phonegap run $1;
 cd -;
