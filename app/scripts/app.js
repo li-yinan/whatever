@@ -32,6 +32,18 @@ angular.module('whateverApp', [
         templateUrl: 'views/test.html',
         controller: 'TestCtrl'
       })
+      .when('/payMenu', {
+        templateUrl: 'views/paymenu.html',
+        controller: 'PaymenuCtrl'
+      })
+      .when('/payIntro', {
+        templateUrl: 'views/payintro.html',
+        controller: 'PayintroCtrl'
+      })
+      .when('/payIndex', {
+        templateUrl: 'views/payindex.html',
+        controller: 'PayindexCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

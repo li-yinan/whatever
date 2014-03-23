@@ -5,13 +5,13 @@
         <li data-target="#carousel-example-generic"
         data-slide-to="{{$index}}"
         ng-class="{active:!$index}"
-        ng-repeat="item in data.slideAd">
+        ng-repeat="item in data.pic_ad">
         </li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-        <div ng-class="{item:true,active:!$index}" ng-repeat="item in data.slideAd">
+        <div ng-class="{item:true,active:!$index}" ng-repeat="item in data.pic_ad">
             <a ng-href="#/ad/{{item.id}}">
                 <img ng-src="{{item.pic}}">
             </a>
@@ -30,19 +30,19 @@
 <!-- icons row 1 -->
 <div class="row row1">
     <a href="#/news" class="icon-btn">
-        <img src="images/chat.png">
+        <img src="images/news.png">
         <p>新闻</p>
     </a>
-    <a href="#/" class="icon-btn">
-        <img src="images/chat.png">
+    <a href="#/payMenu" class="icon-btn">
+        <img src="images/cash.png">
         <p>水电</p>
     </a>
     <a href="#/" class="icon-btn">
-        <img src="images/chat.png">
+        <img src="images/wash.png">
         <p>干洗</p>
     </a>
     <a href="#/" class="icon-btn">
-        <img src="images/chat.png">
+        <img src="images/play.png">
         <p>娱乐</p>
     </a>
 </div>
@@ -69,7 +69,7 @@
 </div>
 <!-- ad row -->
 <div class="row row3">
-    <div ng-repeat="item in data.bigAd">
+    <div ng-repeat="item in data.pic_show_ad">
         <a ng-href="#ad/{{item.id}}">
             <img ng-src="{{item.pic}}" class="">
         </a>

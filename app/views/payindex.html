@@ -1,0 +1,55 @@
+<!-- 选择代缴项目-->
+<p>代缴项目</p>
+<label>
+    <input type="checkbox" ng-model="water"/>
+    <span>水费</span>
+</label>
+<label>
+    <input type="checkbox" ng-model="electronic"/>
+    <span>电费</span>
+</label>
+<!--填写地址-->
+<p>地址<span>*</span></p>
+<div>
+    <select disable="disabled">
+        <option value="">安徽省</option>
+    </select>
+    <select disable="disabled">
+        <option value="">宁国市</option>
+    </select>
+    <select ng-model="com" ng-options="m.communityName for m in community">
+    </select>
+    <!--
+    <select ng-model="com">
+        <option value="{{c.communityId}}" ng-repeat="c in community">{{c.communityName}}</option>
+    </select>
+    -->
+</div>
+<div>
+    <textarea ng-model="addr"></textarea>
+</div>
+<!--填写联系方式-->
+<p>联系方式<span>*</span></p>
+<div>
+    <label>姓氏:<input ng-model="name"/></label>
+    <label><input type="radio" name="sex" ng-model="sex" checked="checked" value="1"/>先生</label>
+    <label><input type="radio" name="sex" ng-model="sex" value="2"/>女士</label>
+</div>
+<div>
+    <label>手机:<input ng-model="phone"/></label>
+</div>
+<!--上门服务时间-->
+<p>上门服务时间<span>*</span></p>
+<div>
+    <select>
+    </select>
+</div>
+<!--留言-->
+<p>留言</p>
+<div>
+    <textarea ng-model="message"></textarea>
+</div>
+<!--提交-->
+<div>
+    <input type="button" value="确认提交" ng-click="submit()"/>
+</div>

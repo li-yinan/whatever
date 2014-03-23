@@ -1,26 +1,50 @@
 {
-    "data": {
-        "slideAd": [{
-            "id":1,
-            "pic":"/images/dog.jpg"
-        },{
-            "id":2,
-            "pic":"/images/dog.jpg"
-        },{
-            "id":3,
-            "pic":"/images/dog.jpg"
-        }],
-        "bigAd": [{
-            "id":1,
-            "pic":"/images/dog.jpg"
-        },{
-            "id":2,
-            "pic":"/mock/resource/a.jpg"
-        },{
-            "id":3,
-            "pic":"/mock/resource/a.jpg"
-        }]
-    },
     "status":0,
-    "statusInfo":""
-}
+    "statusInfo":"success",
+    "data":{
+        "pic_ad":[{
+            "id":"5",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/d29353471e699eb0bb9fb53b18bc6de3.jpg"
+        },
+        {
+            "id":"4",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/e07a9dcf909916b75b6355a320690200.jpg"
+        },
+        {
+            "id":"3",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/4f6c8d7b501bd0cb8bd4deb643e65234.jpg"
+        },
+        {
+            "id":"2",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/2df693f0735a606a79435501ea0aed98.jpg"
+        },
+        {
+            "id":"1",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/9ae2864c409754c0f637d9fbf4a53be7.jpg"
+        }],
+        "pic_show_ad":[{
+            "id":"4",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/dfe8bd2d9e0207b232b068fb8ce6b12f.jpg"
+        },
+        {
+            "id":"3",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/d9d432097e4df1978df62cfe8cfd10a7.jpg"
+        },
+        {
+            "id":"2",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/9330b7d32a5262f52c07817c84ac9845.jpg"
+        },
+        {
+            "id":"1",
+            "url":"www.baidu.com",
+            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/4b0a9b8c2c8fcb032f6988f838732b53.jpg"
+        }]
+    }}

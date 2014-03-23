@@ -1,0 +1,17 @@
+{
+    "status": 0,
+    "statusInfo": "success",
+    "data": {
+        "dataList": [{
+            "communityName":"小区1",
+            "communityId":"1"
+        },{
+            "communityName":"小区2",
+            "communityId":"2"
+        },{
+            "communityName":"小区3",
+            "communityId":"3"
+        }],
+        "defaultCommunity": "2"
+    }
+}
