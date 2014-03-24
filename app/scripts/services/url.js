@@ -18,7 +18,7 @@
             index: "/common/init.php",
             community: "/water_and_electricity/get_communities.php",
             time: "/water_and_electricity/get_time.php",
-            serviceTicket: "",
+            serviceTicket: "/water_and_electricity/set_order.php",
             scrollnews: "/common/ad.php",
             news: "/news/init.php",
             newsDetail: "/news/text_news_details.php",
