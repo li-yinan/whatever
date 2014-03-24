@@ -4,32 +4,32 @@ angular.module('whateverApp')
   .service('Data', ["$http", "remoteServerDomain", function Data($http, domain) {
     // AngularJS will instantiate a singleton by calling "new" on this function
     var exports = {};
-    var request = function(method, url, param, callback) {
+    var request = function(method, url, param, callback, fail) {
+        callback = callback || function() {};
+        fail = fail || function() {};
         url = domain + url;
         $http[method](url, param).success(function(data) {
             if(data.status == 0) {
-                if(typeof callback == "function") {
-                    callback(data.data);
-                }
+                callback(data.data);
             } else {
-                console.log("error!!! " + data.statusInfo);
+                fail(data.statusInfo);
             }
         }).error(function(e) {
-            console.log("get data error!!!\n" + e + "\n" + url);
+            fail();
         });
     }
 
-    exports.get = function(url, param, callback) {
+    exports.get = function(url, param, callback, fail) {
         if(!/\?/.test(url)) {
             url += "?" + $.param(param);
         } else {
             url += "&" + $.param(param);
         }
-        request("get", url, {}, callback);
+        request("get", url, {}, callback, fail);
     };
 
-    exports.post = function(url, param, callback) {
-        request("post", url, param, callback);
+    exports.post = function(url, param, callback, fail) {
+        request("post", url, param, callback, fail);
     };
     return exports;
   }]);

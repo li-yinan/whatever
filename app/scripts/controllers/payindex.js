@@ -10,12 +10,12 @@ angular.module('whateverApp')
           if($scope.electronic) { sname.push(2); }
           param.sname = sname.join(",");
           //处理地址
-          param.communityID = $scope.community.communityId;
+          param.communityID = ($scope.community||{}).communityId;
           param.addr = $scope.addr;
           param.name = $scope.name;
           param.sex = $scope.sex;
           param.phone = $scope.phone;
-          param.timeId = $scope.time.timeId;
+          param.timeId = ($scope.time||{}).timeId;
           param.message = $scope.message;
           console.log(param);
           Data.get(url.serviceTicket, param, function() {
