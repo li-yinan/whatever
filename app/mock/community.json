@@ -1,17 +1,66 @@
-{
-    "status": 0,
-    "statusInfo": "success",
-    "data": {
-        "dataList": [{
-            "communityName":"小区1",
-            "communityId":"1"
-        },{
-            "communityName":"小区2",
-            "communityId":"2"
-        },{
-            "communityName":"小区3",
-            "communityId":"3"
+{"status":0,
+    "statusInfo":"success",
+    "data":{
+        "dataList":[{
+            "communityId":"1",
+            "communityName":"\u91d1\u6865\u6e7e"
+        },
+        {
+            "communityId":"2",
+            "communityName":"\u6ee8\u6c5f\u5fa1\u57ce"
+        },
+        {
+            "communityId":"3",
+            "communityName":"\u5149\u5f69\u57ce"
+        },
+        {
+            "communityId":"4",
+            "communityName":"\u91d1\u5c71\u7ef4\u4e5f\u7eb3"
+        },
+        {
+            "communityId":"5",
+            "communityName":"\u98de\u8fbe\u5fa1\u5e9c"
+        },
+        {
+            "communityId":"6",
+            "communityName":"\u6da6\u57ce"
+        },
+        {
+            "communityId":"7",
+            "communityName":"\u5bcc\u534e\u56fd\u9645"
+        },
+        {
+            "communityId":"8",
+            "communityName":"\u51e4\u51f0\u57ce"
+        },
+        {
+            "communityId":"9",
+            "communityName":"\u767d\u4e91\u5c71"
+        },
+        {
+            "communityId":"10",
+            "communityName":"\u767e\u4fe1\u4e3d\u90e1"
+        },
+        {
+            "communityId":"11",
+            "communityName":"\u57ce\u5e02\u4e4b\u5149"
+        },
+        {
+            "communityId":"12",
+            "communityName":"\u73ab\u7470\u56ed"
+        },
+        {
+            "communityId":"13",
+            "communityName":"\u5fa1\u666f\u534e\u5ead"
+        },
+        {
+            "communityId":"14",
+            "communityName":"\u534e\u8d1d\u57ce\u5e02\u5e7f\u573a"
+        },
+        {
+            "communityId":"15",
+            "communityName":"\u5e78\u798f\u57ce"
         }],
-        "defaultCommunity": "2"
+        "defaultCommunity":1
     }
 }

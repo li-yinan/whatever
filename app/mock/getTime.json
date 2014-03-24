@@ -1,0 +1,14 @@
+{
+    "status":0,
+    "statusInfo":"success",
+    "data":{
+        "dataList":[{
+            "timeId":"4",
+            "timeStr":"11:00 - 13:00"
+        },{
+            "timeId":"5",
+            "timeStr":"17:00 - 19:00"
+        }],
+        "defaultTime":"5"
+    }
+}

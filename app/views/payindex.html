@@ -17,7 +17,7 @@
     <select disable="disabled">
         <option value="">宁国市</option>
     </select>
-    <select ng-model="com" ng-options="m.communityName for m in community">
+    <select ng-model="community" ng-options="m.communityName for m in communityList">
     </select>
     <!--
     <select ng-model="com">
@@ -41,7 +41,7 @@
 <!--上门服务时间-->
 <p>上门服务时间<span>*</span></p>
 <div>
-    <select>
+    <select ng-model="time" ng-options="t.timeStr for t in timeList">
     </select>
 </div>
 <!--留言-->
