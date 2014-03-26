@@ -29,6 +29,7 @@ angular.module('whateverApp')
     };
 
     exports.post = function(url, param, callback, fail) {
+        param = $.param(param);
         request("post", url, param, callback, fail);
     };
     return exports;

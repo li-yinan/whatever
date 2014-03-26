@@ -10,17 +10,39 @@ angular.module('whateverApp')
           if($scope.water) { sname.push(1); }
           if($scope.electronic) { sname.push(2); }
           param.sname = sname.join(",");
+          if(!param.sname) {
+              alert("请选择服务种类");
+              return;
+          }
           //处理地址
-          param.communityID = ($scope.community||{}).communityId;
+          param.communityId = ($scope.community||{}).communityId;
+          if(!param.communityId) {
+              alert("请选择小区");
+              return;
+          }
           param.addr = $scope.addr;
+          if(!param.addr) {
+              alert("请填写地址");
+              return;
+          }
           param.name = $scope.name;
           param.sex = $scope.sex;
           param.phone = $scope.phone;
+          if(!param.phone) {
+              alert("请填写手机");
+              return;
+          }
           param.timeId = ($scope.time||{}).timeId;
+          if(!param.timeId) {
+              alert("请选择上门服务时间");
+              return;
+          }
           param.message = $scope.message;
           console.log(param);
           Data.get(url.serviceTicket, param, function() {
               alert("提交订单成功");
+              alert(JSON.stringify(param));
+              alert("提交地址:"+url.serviceTicket);
           },function() {
               alert("提交订单失败，请重新提交");
           });

@@ -11,10 +11,10 @@
 <!--填写地址-->
 <p>地址<span>*</span></p>
 <div>
-    <select disable="disabled">
+    <select disabled=true>
         <option value="">安徽省</option>
     </select>
-    <select disable="disabled">
+    <select disabled=true>
         <option value="">宁国市</option>
     </select>
     <select ng-model="community" ng-options="m.communityName for m in communityList">
@@ -26,7 +26,7 @@
     -->
 </div>
 <div>
-    <textarea ng-model="addr"></textarea>
+    <textarea ng-model="addr" required></textarea>
 </div>
 <!--填写联系方式-->
 <p>联系方式<span>*</span></p>

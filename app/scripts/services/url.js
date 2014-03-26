@@ -1,7 +1,7 @@
 'use strict';
 (function() {
     var mod = angular.module('whateverApp');
-    if(/localhost/.test(location.host)){
+    if(/localhost:8848/.test(location.host)){
         mod.value('dataUrl', {
             index: "/mock/index.json",
             community: "/mock/community.json",
@@ -15,6 +15,7 @@
         mod.value('remoteServerDomain',"http://localhost:8848/");
     } else {
         mod.value('dataUrl', {
+            //首页
             index: "/common/init.php",
             community: "/water_and_electricity/get_communities.php",
             time: "/water_and_electricity/get_time.php",
