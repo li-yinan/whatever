@@ -38,11 +38,9 @@ angular.module('whateverApp')
               return;
           }
           param.message = $scope.message;
-          console.log(param);
-          Data.get(url.serviceTicket, param, function() {
+          //console.log(param);
+          Data.post(url.serviceTicket, param, function() {
               alert("提交订单成功");
-              alert(JSON.stringify(param));
-              alert("提交地址:"+url.serviceTicket);
           },function() {
               alert("提交订单失败，请重新提交");
           });

@@ -8,7 +8,21 @@ angular.module('whateverApp')
         callback = callback || function() {};
         fail = fail || function() {};
         url = domain + url;
-        $http[method](url, param).success(function(data) {
+
+        var httpObj = {};
+
+        var config = {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        };
+
+        if(method == "get") {
+            httpObj = $http[method](url);
+        } else {
+            httpObj = $http[method](url, param, config);
+        }
+        httpObj.success(function(data) {
             if(data.status == 0) {
                 callback(data.data);
             } else {
