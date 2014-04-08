@@ -1,0 +1,90 @@
+/*
+ * 订单相关的css
+ */
+.pay-index {
+    background-color: #eee;
+}
+.pay-title {
+    margin: 0;
+    font-weight: bold;
+    background-color: #bbb;
+    color: #555;
+    padding-left: 10px;
+}
+.pay-title span {
+    color: #E2553B;
+}
+.pay-type {
+    padding: 10px;
+}
+.pay-type label {
+    display: inline-block;
+    background-color: #d0d0d0;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+.pay-type label input,
+.pay-type label span {
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.pay-addr {
+    padding: 10px;
+}
+
+.pay-addr select {
+    width: 30%;
+    margin-right: 5px;
+}
+
+.pay-addr-text {
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.pay-addr-text textarea {
+    display: block;
+    width: 100%;
+}
+.pay-contact-name {
+    padding: 10px;
+}
+.pay-contact-phone {
+    padding: 10px;
+    padding-top: 0px;
+}
+.pay-contact-name label {
+    margin-right: 5px;
+}
+.pay-contact-name input {
+    width: 60px;
+    line-height: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pay-contact-name input[type=radio] {
+    width: 20px;
+}
+.pay-contact-phone input {
+    line-height: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pay-time {
+    padding: 10px;
+}
+.pay-message {
+    padding: 10px;
+}
+.pay-message textarea{
+    width: 100%;
+}
+.pay-submit {
+    padding: 10px;
+    padding-top: 0px;
+    text-align: center;
+}

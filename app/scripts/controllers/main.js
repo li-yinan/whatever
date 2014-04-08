@@ -10,4 +10,21 @@ angular.module('whateverApp')
               });
           }, 0);
       });
+
+      /**
+       * @brief 点击退出，先confirm
+       *
+       * @return 
+       */
+      $scope.confirmQuit = function() {
+          function onConfirm(button) {
+              if(button==1) navigator.app.exitApp(); //选择了确定才执行退出
+          }
+          navigator.notification.confirm(
+            '确定要退出程序吗?',  // message
+            onConfirm,              // callback to invoke with index of button pressed
+            '确定要退出程序吗?',            // title
+            '确定,取消'          // buttonLabels
+          );
+      };
   }]);

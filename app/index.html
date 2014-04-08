@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="styles/newsdetail.css">
     <link rel="stylesheet" href="styles/picdetail.css">
     <link rel="stylesheet" href="styles/scrollnews.css">
+    <link rel="stylesheet" href="styles/pay.css">
+    <link rel="stylesheet" href="styles/paymenu.css">
     <!-- endbuild -->
   </head>
   <body ng-app="whateverApp">
@@ -39,7 +41,7 @@
         <img src="images/login.png">
         <p>登陆</p>
       </a>
-      <a href="#/">
+      <a href="#/" ng-click="confirmQuit()">
         <img src="images/logout.png">
         <p>退出</p>
       </a>
@@ -53,6 +55,7 @@
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
+    <script src="components/iscroll/build/iscroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -71,6 +74,7 @@
         <script src="scripts/controllers/paymenu.js"></script>
         <script src="scripts/controllers/payintro.js"></script>
         <script src="scripts/controllers/payindex.js"></script>
+        <script src="scripts/controllers/payhistory.js"></script>
         <!-- endbuild -->
 </body>
 </html>

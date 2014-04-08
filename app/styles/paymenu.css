@@ -1,0 +1,10 @@
+.pay-item {
+    margin: 10px;
+    background-color: #eee;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+}
+.pay-item a {
+    display: block;
+    padding: 10px;
+}

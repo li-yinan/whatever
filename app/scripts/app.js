@@ -44,6 +44,10 @@ angular.module('whateverApp', [
         templateUrl: 'views/payindex.html',
         controller: 'PayindexCtrl'
       })
+      .when('/payhistory', {
+        templateUrl: 'views/payhistory.html',
+        controller: 'PayhistoryCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
