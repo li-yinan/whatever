@@ -33,7 +33,7 @@
         <img src="images/home.png">
         <p>首页</p>
       </a>
-      <a href="#/">
+      <a href="javascript:$('#dialogPage').dialog('show')">
         <img src="images/cs.png">
         <p>客服</p>
       </a>
@@ -46,6 +46,14 @@
         <p>退出</p>
       </a>
     </div>
+    <div data-role="page" id="dialogPage">
+        <div data-role="header">
+            <h2>Dialog</h2>
+        </div>
+        <div role="main" class="ui-content">
+            <p>I am a dialog</p>
+        </div>
+    </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -55,13 +63,13 @@
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
-    <script src="components/iscroll/build/iscroll.js"></script>
+    <script src="components/unslider/src/unslider.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="components/jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
         <script src="scripts/app.js"></script>
-        <script src="scripts/custom/bootstrap.js"></script>
         <script src="scripts/directives/scrollnews.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/news.js"></script>

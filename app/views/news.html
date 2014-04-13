@@ -1,33 +1,15 @@
 <!-- slide news -->
-<div id="carousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic"
-        data-slide-to="{{$index}}"
-        ng-class="{active:!$index}"
-        ng-repeat="item in data.banner">
-        </li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div ng-class="{item:true,active:!$index}" ng-repeat="item in data.banner">
+<div class="banner carousel">
+    <ul>
+        <li ng-class="{item:true,active:!$index}" ng-repeat="item in data.banner">
             <a ng-href="#/picdetail/{{item.id}}">
-                <img ng-src="{{item.pic}}">
+                <img ng-src="{{item.pic}}" style="height:{{item.height+'px'}}">
             </a>
             <div class="carousel-caption">
                 {{item.title}}
             </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" data-target="#carousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" data-target="#carousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
+        </li>
+    </ul>
 </div>
 
 <!-- normal news -->

@@ -1,14 +1,23 @@
 'use strict';
 
 angular.module('whateverApp')
-  .controller('MainCtrl', ["$scope", "Data", "dataUrl", function ($scope, Data, url) {
+  .controller('MainCtrl', ["$scope", "Data", "dataUrl", "$timeout", function ($scope, Data, url, $timeout) {
+      var screenWidth = $(window).width();
       Data.get(url.index, {}, function(data) {
-          $scope.data = data;
-          setTimeout(function() {
-              $('#indexAd').carousel({
-                  interval: 2000
+          Data.gets(data.pic_ad, "pic", function() {
+              $scope.$apply(function() {
+                  for(var i=0;i<data.pic_ad.length;i++) {
+                      data.pic_ad[i].height = parseInt(screenWidth/2,10);
+                  }
+                  $scope.data = data;
+                  $timeout(function() {
+                      $('.banner').unslider({
+                          loop: false,
+                          dots: true
+                      });
+                  }, 0);
               });
-          }, 0);
+          });
       });
 
       /**

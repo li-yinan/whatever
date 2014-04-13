@@ -4,7 +4,29 @@ angular.module('whateverApp')
   .service('Data', ["$http", "remoteServerDomain", function Data($http, domain) {
     // AngularJS will instantiate a singleton by calling "new" on this function
     var exports = {};
+
+    //计算有多少个ajax请求在执行，最后一个退出才清除mask
+    var maskFlag = 0;
+    var maskEl = document.createElement("div");
+    var maskBgEl = document.createElement("div");
+    maskEl.appendChild(maskBgEl);
+    maskEl.style.display = "none";
+    maskEl.className = "mask";
+    maskBgEl.className = "mask-bg";
+    document.body.appendChild(maskEl);
+    var showMask = function() {
+        maskFlag++;
+        maskEl.style.display = "";
+    };
+    var hideMask = function() {
+        maskFlag--;
+        if(maskFlag==0) {
+            maskEl.style.display = "none";
+        }
+    };
+
     var request = function(method, url, param, callback, fail) {
+        showMask();
         callback = callback || function() {};
         fail = fail || function() {};
         url = domain + url;
@@ -28,8 +50,10 @@ angular.module('whateverApp')
             } else {
                 fail(data.statusInfo);
             }
+            hideMask();
         }).error(function(e) {
             fail();
+            hideMask();
         });
     }
 
@@ -46,5 +70,20 @@ angular.module('whateverApp')
         param = $.param(param);
         request("post", url, param, callback, fail);
     };
+
+    exports.gets = function(urlArr, key, callback, fail) {
+        showMask();
+        var arr = [];
+        for(var i=0;i<urlArr.length;i++) {
+            arr.push($.ajax(urlArr[i][key]));
+        }
+        $.when.apply($,arr).done(function() {
+            callback();
+            hideMask();
+        }).fail(function() {
+            fail();
+            hideMask();
+        });
+    }
     return exports;
   }]);

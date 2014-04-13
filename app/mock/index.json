@@ -5,27 +5,17 @@
         "pic_ad":[{
             "id":"5",
             "url":"www.baidu.com",
-            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/d29353471e699eb0bb9fb53b18bc6de3.jpg"
+            "pic":"/images/d29353471e699eb0bb9fb53b18bc6de3.jpg"
         },
         {
             "id":"4",
             "url":"www.baidu.com",
-            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/e07a9dcf909916b75b6355a320690200.jpg"
-        },
-        {
-            "id":"3",
-            "url":"www.baidu.com",
-            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/4f6c8d7b501bd0cb8bd4deb643e65234.jpg"
+            "pic":"/images/e07a9dcf909916b75b6355a320690200.jpg"
         },
         {
             "id":"2",
             "url":"www.baidu.com",
-            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/2df693f0735a606a79435501ea0aed98.jpg"
-        },
-        {
-            "id":"1",
-            "url":"www.baidu.com",
-            "pic":"http:\/\/42.51.153.179\/pic_init\/20140322\/9ae2864c409754c0f637d9fbf4a53be7.jpg"
+            "pic":"/images/2df693f0735a606a79435501ea0aed98.jpg"
         }],
         "pic_show_ad":[{
             "id":"4",

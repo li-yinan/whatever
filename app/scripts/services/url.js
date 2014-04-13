@@ -1,7 +1,7 @@
 'use strict';
 (function() {
     var mod = angular.module('whateverApp');
-    if(/localhost:8848/.test(location.host)){
+    if(/8848|7999/.test(location.host)){
         mod.value('dataUrl', {
             index: "/mock/index.json",
             community: "/mock/community.json",
@@ -12,7 +12,7 @@
             newsDetail: "/mock/newsdetail.json",
             picDetail: "/mock/picdetail.json"
         });
-        mod.value('remoteServerDomain',"http://localhost:8848/");
+        mod.value('remoteServerDomain',"http://" + location.host);
     } else {
         mod.value('dataUrl', {
             //首页
