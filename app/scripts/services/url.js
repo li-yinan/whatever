@@ -10,6 +10,9 @@
             scrollnews: "/mock/scrollnews.json",
             news: "/mock/news.json",
             newsDetail: "/mock/newsdetail.json",
+            logout: "/mock/logout.json",
+            login: "/mock/login.json",
+            register: "/mock/register.json",
             picDetail: "/mock/picdetail.json"
         });
         mod.value('remoteServerDomain',"http://" + location.host);
@@ -23,6 +26,9 @@
             scrollnews: "/common/ad.php",
             news: "/news/init.php",
             newsDetail: "/news/text_news_details.php",
+            logout: "/landing/unlanding.php",
+            login: "/landing/landing.php",
+            register: "/landing/register.php",
             picDetail: "/news/pic_news_details.php"
         });
         mod.value('remoteServerDomain',"http://42.51.153.179");

@@ -108,8 +108,25 @@ a, a:hover, a:active {
     float:left;
     text-align: center;
 }
+
 .navbar p {
     margin: 0px;
+}
+
+.navbar .log-state-1 .login {
+    display: block;
+}
+
+.navbar .log-state-1 .logout {
+    display: none;
+}
+
+.navbar .log-state-2 .login {
+    display: none;
+}
+
+.navbar .log-state-2 .logout {
+    display: block;
 }
 
 .banner {

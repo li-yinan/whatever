@@ -4,6 +4,13 @@
 .pay-index {
     background-color: #eee;
 }
+
+.pay-index select {
+    background-color: #eee;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+
 .pay-title {
     margin: 0;
     font-weight: bold;

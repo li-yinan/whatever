@@ -2,14 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!--
+    <meta http-equiv="refresh" content="1;url=http://192.168.1.120:8848"/>
+    -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/custom/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -20,6 +19,7 @@
     <link rel="stylesheet" href="styles/pay.css">
     <link rel="stylesheet" href="styles/paymenu.css">
     <!-- endbuild -->
+    <script src="http://192.168.1.120:8080/target/target-script-min.js#anonymous"></script>
   </head>
   <body ng-app="whateverApp">
     <scrollnews></scrollnews>
@@ -33,28 +33,30 @@
         <img src="images/home.png">
         <p>首页</p>
       </a>
-      <a href="javascript:$('#dialogPage').dialog('show')">
+      <a href="tel:18810061263">
         <img src="images/cs.png">
         <p>客服</p>
       </a>
-      <a href="#/">
+      <a href="#/login" id="logState" class="log-state-1">
         <img src="images/login.png">
-        <p>登陆</p>
+        <p class="login">登陆</p>
+        <p class="logout">注销</p>
       </a>
-      <a href="#/" ng-click="confirmQuit()">
+      <a onclick="exit()">
         <img src="images/logout.png">
         <p>退出</p>
       </a>
     </div>
-    <div data-role="page" id="dialogPage">
-        <div data-role="header">
-            <h2>Dialog</h2>
-        </div>
-        <div role="main" class="ui-content">
-            <p>I am a dialog</p>
-        </div>
-    </div>
 
+    <script>
+        function exit() {
+            if(confirm("您确定退出？")) {
+                navigator.app.exitApp();
+            }
+        }
+    </script>
+
+    <script src="phonegap.js"></script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="components/jquery/jquery.js"></script>
@@ -66,10 +68,17 @@
     <script src="components/unslider/src/unslider.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+        <script>
+            $(document).bind("mobileinit", function(){
+                $.mobile.ajaxEnabled = false;
+                $.mobile.autoInitializePage = false;
+            });
+        </script>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="components/jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/custom/autologin.js"></script>
         <script src="scripts/directives/scrollnews.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/news.js"></script>
@@ -83,6 +92,8 @@
         <script src="scripts/controllers/payintro.js"></script>
         <script src="scripts/controllers/payindex.js"></script>
         <script src="scripts/controllers/payhistory.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/register.js"></script>
         <!-- endbuild -->
 </body>
 </html>
