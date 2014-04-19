@@ -19,13 +19,25 @@
     <link rel="stylesheet" href="styles/pay.css">
     <link rel="stylesheet" href="styles/paymenu.css">
     <!-- endbuild -->
+    <script>
+        (function() {
+         //判断是否有网络连接
+            var callback = function() {
+                if(navigator.network.connection.type === Connection.NONE) {
+                    alert("请连接到网络再启动本程序")
+                    navigator.app.exitApp();
+                }
+            }
+            document.addEventListener("deviceready", callback, false);
+        })();
+    </script>
     <script src="http://192.168.1.120:8080/target/target-script-min.js#anonymous"></script>
   </head>
   <body ng-app="whateverApp">
     <scrollnews></scrollnews>
     <div ng-view=""></div>
     <div class="navbar">
-      <a href="javascript:history.go(-1);">
+      <a onclick="history.go(-1);">
         <img src="images/back.png">
         <p>后退</p>
       </a>
@@ -77,8 +89,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="components/jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
-        <script src="scripts/app.js"></script>
         <script src="scripts/custom/autologin.js"></script>
+        <script src="scripts/app.js"></script>
         <script src="scripts/directives/scrollnews.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/news.js"></script>

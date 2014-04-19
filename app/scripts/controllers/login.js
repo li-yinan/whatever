@@ -15,13 +15,12 @@ angular.module('whateverApp')
       if(uuid) {
           //这个请求和注销没有依赖关系，可以并行执行
           Data.get(url.getUserName, {uuid: uuid}, function(data) {
-              $scope.$apply(function() {
-                  $scope.username = data.username;
-              });
+              $scope.username = data.username;
           });
       }
       $scope.login = function() {
           var param = {};
+          param.uuid = uuid;
           param.username = $scope.username;
           if(!param.username) {
               alert("请填写昵称");

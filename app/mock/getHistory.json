@@ -1,0 +1,14 @@
+{
+    "status":0,
+    "statusInfo":"success",
+    "data":{
+        "sname":"1,2",
+        "communityId":"4",
+        "addr":"1\u53f7\u697c1\u5355\u5143101\u5ba4",
+        "name":"\u7fc1",
+        "sex":1,
+        "phone":"15117987866",
+        "timeId":"4",
+        "message":"\u6765\u4e4b\u524d\u7535\u8bdd\u786e\u8ba4"
+    }
+}

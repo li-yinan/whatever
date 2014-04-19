@@ -13,6 +13,8 @@
             logout: "/mock/logout.json",
             login: "/mock/login.json",
             register: "/mock/register.json",
+            getUserName: "/mock/getUserName.json",
+            getHistory: "/mock/getHistory.json",
             picDetail: "/mock/picdetail.json"
         });
         mod.value('remoteServerDomain',"http://" + location.host);
@@ -29,6 +31,8 @@
             logout: "/landing/unlanding.php",
             login: "/landing/landing.php",
             register: "/landing/register.php",
+            getUserName: "/landing/get_username",
+            getHistory: "/water_and_electricity/get_history.php",
             picDetail: "/news/pic_news_details.php"
         });
         mod.value('remoteServerDomain',"http://42.51.153.179");
