@@ -1,0 +1,13 @@
+{
+    "status":0,
+    "statusInfo":"success",
+    "data":{
+        "dataList":[
+        {"priceId":1, "priceStr":"不限"},
+        {"priceId":2, "priceStr":"1-5万"},
+        {"priceId":3, "priceStr":"5-10万"},
+        {"priceId":4, "priceStr":"10万以上"}
+        ],
+            "defaultPrice":1
+    }
+}

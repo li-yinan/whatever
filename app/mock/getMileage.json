@@ -1,0 +1,13 @@
+{
+    "status":0,
+    "statusInfo":"success",
+    "data":{
+        "dataList":[
+        {"mileageId":1, "mileageStr":"不限"},
+        {"mileageId":2, "mileageStr":"0-1万公里"},
+        {"mileageId":3, "mileageStr":"1万-10万公里"},
+        {"mileageId":4, "mileageStr":"10万公里以上"}
+        ],
+            "defaultMileage":1
+    }
+}

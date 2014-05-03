@@ -1,0 +1,30 @@
+{
+    "status": 0,
+    "statusInfo": "success",
+    "data": {
+        "title": "奥迪 2014款 Sportback 45 TFSI",
+        "price": "￥46.7万",
+        "mileage": "12000公里",
+        "purchase_date": "2013-01-20",
+        "purchase_price": "￥56.8万",
+        "gearbox": "自动",
+        "displacement": "3.0L",
+        "colour": "紫红",
+        "emission_standard": "国3",
+        "inspection_expire": "2014-12-01",
+        "maintain_expire": "2014-12-01",
+        "maintain_situation": "4S定期",
+        "combined_MPG": "9.6L/100KM",
+        "crew_num": "5",
+        "body_model": "三厢",
+        "type": "Sportback 45 TFSI",
+        "date_issued": "2014-04-26",
+        "pic_list": [
+            "http://42.51.153.179/second_hand_car/pic/20140426/be56197621947c9a7b7953bd5ea24112.jpg",
+            "http://42.51.153.179/second_hand_car/pic/20140426/e477b10942fd9a80cb14d9b4ff46c12d.jpg",
+            "http://42.51.153.179/second_hand_car/pic/20140426/64cf65e165ca52d7a767438c0d188cf6.jpg",
+            "http://42.51.153.179/second_hand_car/pic/20140426/c172fa791b111c63554bb093a475afba.jpg",
+            "http://42.51.153.179/second_hand_car/pic/20140426/ed3022b7be982da3dc97e000235407ff.jpg"
+        ]
+    }
+}

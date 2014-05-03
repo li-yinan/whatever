@@ -1,0 +1,75 @@
+<div class="car-index">
+    <div class="car-query">
+        <table class="car-query-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <span>品牌:</span>
+                    </td>
+                    <td>
+                        <select ng-model="brand" ng-options="m.brandStr for m in brandList">
+                        </select>
+                    </td>
+                    <td>
+                        <span>价格:</span>
+                    </td>
+                    <td>
+                        <select ng-model="price" ng-options="m.priceStr for m in priceList">
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>车龄:</span>
+                    </td>
+                    <td>
+                        <select ng-model="usedtime" ng-options="m.usedtimeStr for m in usedtimeList">
+                        </select>
+                    </td>
+                    <td>
+                        <span>里程:</span>
+                    </td>
+                    <td>
+                        <select ng-model="mileage" ng-options="m.mileageStr for m in mileageList">
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>变速箱:</span>
+                    </td>
+                    <td>
+                        <select ng-model="gearbox" ng-options="m.gearboxStr for m in gearboxList">
+                        </select>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="car-query">
+        <a ng-click="query()">查询</a>
+    </div>
+    <div class="car-query-result">
+        <div ng-show="!result.length" class="car-query-no-result">
+        无结果
+        </div>
+        <a href="#/carDetail/{{item.id}}" class="car-item" ng-repeat="item in result">
+            <img ng-src="{{item.pic}}">
+            <div class="car-info-row1">
+                <span>{{item.brand}}</span>
+                <span>{{item.displacement}}</span>
+                <span>{{item.gearbox}}</span>
+            </div>
+            <div class="car-info-row2">
+                <span>{{item.mileage}}/{{item.purchase_date}}上牌</span>
+            </div>
+            <div class="car-info-row3">
+                <span>{{item.price}}</span>
+            </div>
+        </a>
+    </div>
+</div>

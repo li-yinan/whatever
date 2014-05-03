@@ -1,0 +1,61 @@
+/*
+ * 登陆相关css
+ */
+
+.login * {
+    color: #5bafd3;
+    border-color: #5bafd3;
+}
+.login .login-row {
+    margin: 10px;
+}
+.login .login-title {
+    font-size: 24px;
+}
+
+.login .username,
+.login .password {
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 3em;
+    line-height: 3em;
+    padding-left: 1em;
+}
+
+.login .username span,
+.login .password span {
+    vertical-align: middle;
+}
+.login .username input,
+.login .password input {
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    height: 1.2em;
+    line-height: 1.2em;
+    width: 10em;
+}
+
+.login .opr-login {
+    margin-top: 40px;
+}
+
+.login .opr-login a,
+.login .opr-register a {
+    font-size: 16px;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    display: block;
+    width: 100%;
+    background-color: #5bafd3;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.login .opr-login a:active,
+.login .opr-register a:active {
+    background-color: #166a8f;
+}

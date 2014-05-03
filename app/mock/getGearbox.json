@@ -1,0 +1,13 @@
+{
+    "status":0,
+    "statusInfo":"success",
+    "data":{
+        "dataList":[
+        {"gearboxId":1, "gearboxStr":"不限"},
+        {"gearboxId":2, "gearboxStr":"手动"},
+        {"gearboxId":3, "gearboxStr":"自动"},
+        {"gearboxId":4, "gearboxStr":"手自一体"}
+        ],
+            "defaultGearbox":1
+    }
+}

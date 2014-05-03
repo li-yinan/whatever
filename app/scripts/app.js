@@ -56,6 +56,14 @@ angular.module('whateverApp', [
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl'
       })
+      .when('/carIndex', {
+        templateUrl: 'views/carindex.html',
+        controller: 'CarindexCtrl'
+      })
+      .when('/carDetail/:id', {
+        templateUrl: 'views/cardetail.html',
+        controller: 'CardetailCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

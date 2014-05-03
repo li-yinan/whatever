@@ -4,6 +4,8 @@ angular.module('whateverApp')
   .controller('MainCtrl', ["$scope", "Data", "dataUrl", "$timeout", function ($scope, Data, url, $timeout) {
       var screenWidth = $(window).width();
       Data.get(url.index, {}, function(data) {
+          //处理电话
+          $("#customService").attr("href","tel:" + (data.phone || ""));
           Data.gets(data.pic_ad, "pic", function() {
               $scope.$apply(function() {
                   for(var i=0;i<data.pic_ad.length;i++) {

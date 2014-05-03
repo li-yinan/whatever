@@ -1,0 +1,9 @@
+edp INFO EDP WebServer start, http://192.168.1.120:8848
+edp INFO root = [/Users/liyinan/dev/whatever/app], listen = [8848] 
+Checking edp update......
+info trying registry request attempt 1 at 19:13:20
+http GET https://registry.npmjs.org/edp
+http 304 https://registry.npmjs.org/edp
+=.= The latest edp version is `1.0.0`, please update your edp use `npm update -g edp`
+edp INFO EDP WebServer start, http://192.168.1.120:8848
+edp INFO root = [/Users/liyinan/dev/whatever/app], listen = [8848] 

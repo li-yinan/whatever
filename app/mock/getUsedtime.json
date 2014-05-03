@@ -1,0 +1,13 @@
+{
+    "status":0,
+    "statusInfo":"success",
+    "data":{
+        "dataList":[
+        {"usedtimeId":1, "usedtimeStr":"不限"},
+        {"usedtimeId":2, "usedtimeStr":"0-3年"},
+        {"usedtimeId":3, "usedtimeStr":"3-6年"},
+        {"usedtimeId":4, "usedtimeStr":"6年以上"}
+        ],
+            "defaultUsedtime":1
+    }
+}

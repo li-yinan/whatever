@@ -1,0 +1,12 @@
+{
+    "status":0,
+    "statusInfo":"success",
+    "data":{
+        "dataList":[
+            {"brandId":1, "brandStr":"不限"},
+            {"brandId":2, "brandStr":"奥迪"},
+            {"brandId":3, "brandStr":"奔驰"}
+        ],
+        "defaultBrand":1
+    }
+}

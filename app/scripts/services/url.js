@@ -15,6 +15,13 @@
             register: "/mock/register.json",
             getUserName: "/mock/getUserName.json",
             getHistory: "/mock/getHistory.json",
+            getBrand: "/mock/getBrand.json",
+            getPrice: "/mock/getPrice.json",
+            getUsedtime: "/mock/getUsedtime.json",
+            getMileage: "/mock/getMileage.json",
+            getGearbox: "/mock/getGearbox.json",
+            carInit: "/mock/carInit.json",
+            getCarDetail: "/mock/getCarDetail.json",
             picDetail: "/mock/picdetail.json"
         });
         mod.value('remoteServerDomain',"http://" + location.host);
@@ -33,6 +40,13 @@
             register: "/landing/register.php",
             getUserName: "/landing/get_username",
             getHistory: "/water_and_electricity/get_history.php",
+            getBrand: "/second_hand_car/get_brand_list.php",
+            getPrice: "/second_hand_car/get_price_list.php",
+            getUsedtime: "/second_hand_car/get_usedtime_list.php",
+            getMileage: "/second_hand_car/get_mileage_list.php",
+            getGearbox: "/second_hand_car/get_gearbox_list.php",
+            carInit: "/second_hand_car/init.php",
+            getCarDetail: "/second_hand_car/car_info_details.php",
             picDetail: "/news/pic_news_details.php"
         });
         mod.value('remoteServerDomain',"http://42.51.153.179");

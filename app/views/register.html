@@ -1,23 +1,26 @@
-<div>
-    <div>
+<div class="register">
+    <div class="register-row register-title">
+        注册账号
+    </div>
+    <div class="register-row username">
         <label>
             <span>昵称:</span>
             <input ng-model="username" placeholder="请输入昵称"/>
         </label>
-    <div>
     </div>
+    <div class="register-row password">
         <label>
             <span>密码:</span>
             <input ng-model="password" type="password"/>
         </label>
     </div>
-    </div>
+    <div class="register-row confirmPassword">
         <label>
             <span>确认:</span>
             <input ng-model="confirmPassword" type="password"/>
         </label>
     </div>
-    <div>
-        <input type="button" value="注册" ng-click="register()">
+    <div class="register-row opr-register">
+        <a ng-click="register()">注册</a>
     </div>
 </div>

@@ -1,0 +1,63 @@
+/*
+ * 登陆相关css
+ */
+
+.register * {
+    color: #5bafd3;
+    border-color: #5bafd3;
+}
+.register .register-row {
+    margin: 10px;
+}
+.register .register-title {
+    font-size: 24px;
+}
+
+.register .username,
+.register .password,
+.register .confirmPassword {
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 3em;
+    line-height: 3em;
+    padding-left: 1em;
+}
+
+.register .username span,
+.register .password span,
+.register .confirmPassword span {
+    vertical-align: middle;
+}
+.register .username input,
+.register .password input,
+.register .confirmPassword input {
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    height: 1.2em;
+    line-height: 1.2em;
+    width: 10em;
+}
+
+.register .opr-register {
+    margin-top: 40px;
+}
+
+.register .opr-register a {
+    font-size: 16px;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    display: block;
+    width: 100%;
+    background-color: #5bafd3;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.register .opr-register a:active,
+.register .opr-register a:active {
+    background-color: #166a8f;
+}

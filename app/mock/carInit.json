@@ -1,0 +1,50 @@
+{
+    "status": 0,
+    "statusInfo": "success",
+    "data": [
+        {
+            "pic": "http://42.51.153.179/second_hand_car/pic/20140426/0eb74cb2a54dd7c53ba0d28e1bd85681.jpg",
+            "brand": "奥迪",
+            "displacement": "3.0L",
+            "gearbox": "自动",
+            "mileage": "12000公里",
+            "purchase_date": "2013-01-20",
+            "price": "￥46.7万",
+            "id": "1",
+            "url": "http://42.51.153.179/second_hand_car/car_info_details.php?id=1"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_car/pic/20140426/0eb74cb2a54dd7c53ba0d28e1bd85681.jpg",
+            "brand": "奥迪",
+            "displacement": "3.0L",
+            "gearbox": "自动",
+            "mileage": "12000公里",
+            "purchase_date": "2013-01-20",
+            "price": "￥46.7万",
+            "id": "4",
+            "url": "http://42.51.153.179/second_hand_car/car_info_details.php?id=4"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_car/pic/20140426/0eb74cb2a54dd7c53ba0d28e1bd85681.jpg",
+            "brand": "奥迪",
+            "displacement": "3.0L",
+            "gearbox": "自动",
+            "mileage": "12000公里",
+            "purchase_date": "2013-01-20",
+            "price": "￥46.7万",
+            "id": "7",
+            "url": "http://42.51.153.179/second_hand_car/car_info_details.php?id=7"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_car/pic/20140426/0eb74cb2a54dd7c53ba0d28e1bd85681.jpg",
+            "brand": "奥迪",
+            "displacement": "3.0L",
+            "gearbox": "自动",
+            "mileage": "12000公里",
+            "purchase_date": "2013-01-20",
+            "price": "￥46.7万",
+            "id": "10",
+            "url": "http://42.51.153.179/second_hand_car/car_info_details.php?id=10"
+        }
+    ]
+}
