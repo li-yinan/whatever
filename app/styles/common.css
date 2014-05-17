@@ -1,4 +1,4 @@
-body, div, p, ul, li, a {
+body, div, p, ol, ul, li, a {
     margin: 0;
     padding: 0;
 }
@@ -8,39 +8,14 @@ ul, li {
 }
 
 body {
+    padding-top: 45px;
+    padding-bottom: 50px;
     width: 320px;
 }
 
-.nav-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 320px;
-    overflow: hidden;
-    border-top: solid 1px #cfc9ca;
-    background-color: #e8e8e8;
-}
-
-.nav-bottom a {
-    width: 25%;
-    display: block;
-    float: left;
-    height: 50px;
-    text-align: center;
+a {
     text-decoration: none;
 }
-
-.nav-bottom p {
-    font-size: 14px;
-    color: #606366;
-    text-align: center;
-    width: 100%;
-}
-
-.nav-bottom img {
-    width: 24px;
-    height: 24px;
-    margin-top: 5px;
-    margin-bottom: 3px;
+img {
+    border: none;
 }

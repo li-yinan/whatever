@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-     <meta name="viewport" content="width=320,user-scalable=no" />
+    <meta name="viewport" content="width=320,user-scalable=no" />
     <!--
-     <meta name="viewport" content="width=400,user-scalable=no" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
     <meta http-equiv="refresh" content="1;url=http://192.168.1.120:8848"/>
     -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +22,16 @@
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/register.css">
     <link rel="stylesheet" href="styles/carIndex.css">
+    <link rel="stylesheet" href="styles/carsearch.css">
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/offcosUI/main.css -->
+    <link rel="stylesheet" href="styles/offcosUI/bottomnavbar.css">
+    <link rel="stylesheet" href="styles/offcosUI/topnavbar.css">
+    <link rel="stylesheet" href="styles/offcosUI/slider.css">
+    <link rel="stylesheet" href="styles/offcosUI/list.css">
+    <link rel="stylesheet" href="styles/offcosUI/radio.css">
+    <link rel="stylesheet" href="styles/offcosUI/selectset.css">
+    <link rel="stylesheet" href="styles/offcosUI/dialog.css">
     <!-- endbuild -->
     <script>
         (function() {
@@ -35,33 +45,10 @@
             document.addEventListener("deviceready", callback, false);
         })();
     </script>
-    <!--
     <script src="http://192.168.1.120:8080/target/target-script-min.js#anonymous"></script>
-    -->
   </head>
   <body ng-app="whateverApp">
-    <!--
-    <scrollnews></scrollnews>
-    -->
     <div ng-view=""></div>
-    <div class="nav-bottom">
-      <a href="#/">
-        <img src="images/icon/home.png">
-        <p>首页</p>
-      </a>
-      <a href="#/">
-        <img src="images/home.png">
-        <p>客服</p>
-      </a>
-      <a href="#/">
-        <img src="images/home.png">
-        <p>个人中心</p>
-      </a>
-      <a href="#/">
-        <img src="images/home.png">
-        <p>我要发布</p>
-      </a>
-    </div>
 
     <script>
         function exit() {
@@ -94,7 +81,6 @@
         <script src="components/jquery-mobile/jquery.mobile-1.4.2.min.js"></script>
         <script src="scripts/custom/autologin.js"></script>
         <script src="scripts/app.js"></script>
-        <script src="scripts/directives/scrollnews.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/news.js"></script>
         <script src="scripts/controllers/newsdetail.js"></script>
@@ -111,6 +97,28 @@
         <script src="scripts/controllers/register.js"></script>
         <script src="scripts/controllers/carIndex.js"></script>
         <script src="scripts/controllers/carDetail.js"></script>
+        <script src="scripts/controllers/carsearch.js"></script>
+        <script src="scripts/directives/selectSet.js"></script>
+        <script src="scripts/directives/dialog.js"></script>
+        <script src="scripts/directives/radioSet.js"></script>
+        <script src="scripts/directives/radioItem.js"></script>
+        <script src="scripts/directives/bottomNavBar.js"></script>
+        <script src="scripts/directives/topNavBar.js"></script>
+        <script src="scripts/directives/slider.js"></script>
+        <script src="scripts/directives/list.js"></script>
         <!-- endbuild -->
+        <script>
+            (function() {
+                //不支持viewport的手机尝试用zoom来修复
+                try {
+                    //var screenWidth = screen.availWidth;
+                    var screenWidth = document.documentElement.offsetWidth;
+                    if ( screenWidth != 320 ) {
+                        document.body.style.zoom = screenWidth / 320;
+                    }
+                } catch(e) {
+                }
+            })();
+        </script>
 </body>
 </html>

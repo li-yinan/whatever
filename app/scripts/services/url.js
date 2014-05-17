@@ -22,7 +22,9 @@
             getGearbox: "/mock/getGearbox.json",
             carInit: "/mock/carInit.json",
             getCarDetail: "/mock/getCarDetail.json",
-            picDetail: "/mock/picdetail.json"
+            picDetail: "/mock/picdetail.json",
+            get_choose_info: "/mock/get_choose_info.json",
+            get_result_count: "/mock/get_result_count.json"
         });
         mod.value('remoteServerDomain',"http://" + location.host);
     } else {
@@ -47,7 +49,9 @@
             getGearbox: "/second_hand_car/get_gearbox_list.php",
             carInit: "/second_hand_car/init.php",
             getCarDetail: "/second_hand_car/car_info_details.php",
-            picDetail: "/news/pic_news_details.php"
+            picDetail: "/news/pic_news_details.php",
+            get_choose_info: "/second_hand_car/get_choose_info.php",
+            get_result_count: "/second_hand_car/get_result_count.php"
         });
         mod.value('remoteServerDomain',"http://42.51.153.179");
     }

@@ -1,65 +1,28 @@
-<div class="nav">
-    上乘生活
-</div>
-<!-- slide news -->
-<div id="indexAd">
-    <!-- Wrapper for slides -->
-    <div class="banner">
-        <ul>
-            <li ng-class="{item:true,active:!$index}" ng-repeat="item in data.pic_ad">
-                <a ng-href="#/ad/{{item.id}}">
-                    <img ng-src="{{item.pic}}" style="height:{{item.height+'px'}}">
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
+<top-nav-bar>
+上乘生活
+</top-nav-bar>
+<!-- slidek news -->
+<slider data="pic_ad">
+</slider>
 
-<!-- icons row 1 -->
-<div class="row row1">
-    <a href="#/news" class="icon-btn">
-        <img src="images/news.png">
-        <p>新闻</p>
-    </a>
-    <a href="#/payMenu" class="icon-btn">
-        <img src="images/cash.png">
-        <p>水电代缴</p>
-    </a>
-    <a href="#/" class="icon-btn">
-        <img src="images/wash.png">
-        <p>干洗</p>
-    </a>
-    <a href="#/" class="icon-btn">
-        <img src="images/play.png">
-        <p>娱乐</p>
-    </a>
-</div>
-<!-- icons row 2 -->
-<div class="row row2">
-    <a href="#/carIndex" class="icon-btn">
-        <div>
-            <img src="images/car.png">
-            <p>二手车</p>
-        </div>
-    </a>
-    <a href="#/" class="icon-btn">
-        <div>
-            <img src="images/house.png">
-            <p>二手房|租房</p>
-        </div>
-    </a>
-    <a href="#/" class="icon-btn">
-        <div>
-            <img src="images/food.png">
-            <p>美食</p>
-        </div>
-    </a>
-</div>
-<!-- ad row -->
-<div class="row row3">
-    <div ng-repeat="item in data.pic_show_ad">
+<div class="home-page">
+    <div>
+        <!--
+        <a href="#/carsearch" class="icon-btn car">
+        -->
+        <a href="#/carIndex" class="icon-btn car"></a>
+        <a href="#/" class="icon-btn house"></a>
+        <a href="#/news" class="icon-btn news"></a>
+        <a href="#/" class="icon-btn dryclean"></a>
+        <a href="#/" class="icon-btn activity"></a>
+        <a href="#/" class="icon-btn entertainment"></a>
+        <a href="#/" class="icon-btn recruit"></a>
+    </div>
+    <div class="wide-pic" ng-repeat="item in pic_show_ad">
         <a ng-href="#ad/{{item.id}}">
-            <img ng-src="{{item.pic}}" class="">
+            <img ng-src="{{item.pic}}">
         </a>
     </div>
 </div>
+<bottom-nav-bar type="home">
+</bottom-nav-bar>

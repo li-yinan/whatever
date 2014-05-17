@@ -1,0 +1,27 @@
+<div ng-show="isShow">
+    <div class="dialog">
+        <div class="dialog-title">
+            {{title}}
+        </div>
+        <div class="dialog-content" ng-transclude>
+        </div>
+        <div class="dialog-operation">
+            <a
+                class="ok"
+                ng-click="onOk()"
+                ng-show="type=='confirm'||type=='alert'"
+                >
+                确定
+            </a>
+            <a
+                class="cancel"
+                ng-click="onCancel()"
+                ng-ng-show="type=='confirm'"
+                >
+                取消
+            </a>
+        </div>
+    </div>
+    <div class="dialog-mask" ng-click="close()">
+    </div>
+</div>

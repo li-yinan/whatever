@@ -56,6 +56,10 @@ angular.module('whateverApp', [
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl'
       })
+      .when('/carIndex/:brandId/:priceId/:usedtimeId/:mileageId/:gearboxId', {
+        templateUrl: 'views/carindex.html',
+        controller: 'CarindexCtrl'
+      })
       .when('/carIndex', {
         templateUrl: 'views/carindex.html',
         controller: 'CarindexCtrl'
@@ -63,6 +67,10 @@ angular.module('whateverApp', [
       .when('/carDetail/:id', {
         templateUrl: 'views/cardetail.html',
         controller: 'CardetailCtrl'
+      })
+      .when('/carsearch', {
+        templateUrl: 'views/carsearch.html',
+        controller: 'CarsearchCtrl'
       })
       .otherwise({
         redirectTo: '/'

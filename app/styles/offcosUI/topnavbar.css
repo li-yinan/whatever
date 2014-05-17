@@ -1,0 +1,43 @@
+.top-nav-bar {
+    width: 320px;
+    height: 45px;
+    background-color: #ff9605;
+    box-shadow: 0px 0px 3px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+.top-nav-bar .back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 45px;
+    width: 45px;
+    background-image: url("img/arrback.png");
+    background-size: 12px 24px;
+    background-position: 12px 12px;
+    background-repeat: no-repeat;
+}
+
+.top-nav-bar .search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 46px;
+    width: 46px;
+    background-image: url("img/search.png");
+    background-size: 23px 23px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+}
+
+.top-nav-bar .title {
+    font-size: 20px;
+    line-height: 45px;
+    height: 45px;
+    color: #fff;
+    text-align: center;
+}

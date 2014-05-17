@@ -1,0 +1,15 @@
+<top-nav-bar type="back" url="#/carIndex">
+搜索
+</top-nav-bar>
+<div class="car-search" data="data">
+    <list type="arr">
+        <select-set data="item.data" title="item.label" value="item.value"></select-set>
+    </list>
+    <div class="car-search-total">
+        共有{{total}}条相关二手车车源信息
+    </div>
+    <div class="car-search-operation">
+        <a class="car-search-clear" ng-click="clear()">清空</a>
+        <a class="car-search-query" ng-click="query()">查询</a>
+    </div>
+</div>

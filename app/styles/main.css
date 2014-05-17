@@ -1,0 +1,96 @@
+.home-page {
+    padding: 8px;
+    background-color: #eee;
+    overflow: hidden;
+}
+.home-page a {
+    float: left;
+}
+
+.home-page .car {
+    width: 150px;
+    height: 72px;
+    margin-right: 5px;
+    background-image: url("icon/car.png");
+    background-size: 150px 72px;
+}
+.home-page .car:active {
+    background-image: url("icon/car_active.png");
+}
+
+.home-page .house {
+    width: 148px;
+    height: 72px;
+    background-image: url("icon/house.png");
+    background-size: 148px 72px;
+}
+.home-page .house:active {
+    background-image: url("icon/house_active.png");
+}
+
+.home-page .news {
+    width: 98px;
+    height: 72px;
+    background-image: url("icon/news.png");
+    background-size: 98px 72px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.home-page .news:active {
+    background-image: url("icon/news_active.png");
+}
+
+.home-page .dryclean {
+    width: 98px;
+    height: 72px;
+    background-image: url("icon/dryclean.png");
+    background-size: 98px 72px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.home-page .dryclean:active {
+    background-image: url("icon/dryclean_active.png");
+}
+
+.home-page .activity {
+    width: 98px;
+    height: 72px;
+    background-image: url("icon/activity.png");
+    background-size: 98px 72px;
+    margin-top: 5px;
+}
+.home-page .dryclean:active {
+    background-image: url("icon/activity_active.png");
+}
+
+.home-page .entertainment {
+    width: 148px;
+    height: 72px;
+    background-image: url("icon/entertainment.png");
+    background-size: 148px 72px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.home-page .entertainment:active {
+    background-image: url("icon/entertainment_active.png");
+}
+
+.home-page .recruit {
+    width: 150px;
+    height: 72px;
+    background-image: url("icon/recruit.png");
+    background-size: 150px 72px;
+    margin-top: 5px;
+}
+.home-page .recruit:active {
+    background-image: url("icon/recruit_active.png");
+}
+
+.home-page .wide-pic {
+    margin-top: 5px;
+}
+
+.home-page .wide-pic img {
+    margin-top: 5px;
+    width: 304px;
+}

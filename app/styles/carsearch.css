@@ -1,0 +1,31 @@
+.car-search-total {
+    text-align: center;
+    font-size: 16px;
+    color: #ff9605;
+    height: 54px;
+    line-height: 54px;
+}
+
+.car-search-operation {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.car-search-operation a {
+    display: block;
+    float: left;
+    width: 132px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    margin-left: 18px;
+}
+
+.car-search-clear {
+    background-color: #ed8900;
+}
+
+.car-search-query {
+    background-color: #54a717;
+}

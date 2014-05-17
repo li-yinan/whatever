@@ -1,0 +1,13 @@
+.select-set {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 18px;
+}
+
+.select-set .title {
+    float: left;
+}
+
+.select-set .text {
+    float: right;
+}

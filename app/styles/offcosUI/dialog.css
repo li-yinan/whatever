@@ -1,0 +1,61 @@
+.dialog {
+    position: fixed;
+    background-color: #fff;
+    top: 25px;
+    left: 32px;
+    width: 250px;
+    z-index: 10;
+}
+.dialog .dialog-title {
+    height: 45px;
+    border-bottom: solid 2px #ff9606;
+    text-align: center;
+    font-size: 16px;
+}
+
+.dialog .dialog-content {
+    max-height: 350px;
+    overflow: scroll;
+}
+
+.dialog .dialog-operation {
+    height: 48px;
+    border-top: solid 1px #ff9606;
+    overflow: hidden;
+}
+
+.dialog .ok {
+    text-decoration: none;
+    line-height: 48px;
+    width: 124px;
+    text-align: center;
+    float: left;
+    border-right: solid 1px #ff9606;
+}
+
+.dialog .ok:active {
+    background-color: #e8e8e8;
+}
+
+.dialog .cancel {
+    text-decoration: none;
+    line-height: 48px;
+    width: 124px;
+    text-align: center;
+    float: left;
+}
+
+.dialog .cancel:active {
+    background-color: #e8e8e8;
+}
+
+.dialog-mask {
+    background-color: #000;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
