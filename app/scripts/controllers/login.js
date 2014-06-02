@@ -21,33 +21,32 @@ angular.module('whateverApp')
           Data.get(url.getUserName, {uuid: uuid}, _setUserName);
       }
       $scope.login = function() {
+          var alertScope = angular.element("#alertMessage").scope();
           var param = {};
           param.uuid = uuid;
           param.username = $scope.username;
           if(!param.username) {
-              alert("请填写昵称");
+              alertScope.openDialog("请填写昵称");
               return "请填写昵称";
           }
           param.password = $scope.password;
           if(!param.password) {
-              alert("请填写密码");
+              alertScope.openDialog("请填写密码");
               return "请填写密码";
           }
           //发出登陆请求
-          var _sendLoginRequest = $scope._sendLoginRequest = function(data) {
+          Data.get(url.login, param, function(data) {
               //登陆成功之后要跳转到首页
               if(data.status === 0) {
-                  $("#logState")
-                      .removeClass("log-state-1")
-                      .addClass("log-state-2");
-                  $location.path("/");
+                  alertScope.openDialog("登陆成功", function() {
+                      $location.path("/");
+                  });
                   return "登陆成功";
               } else {
-                  alert(data.statusInfo);
+                  alertScope.openDialog(data.statusInfo);
                   return "登陆失败";
               }
-          };
-          Data.get(url.login, param, _sendLoginRequest);
+          });
           return "";
       };
       /**

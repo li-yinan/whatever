@@ -3,7 +3,6 @@
 angular.module('whateverApp', [
   'ngCookies',
   'ngResource',
-  'ngSanitize',
   'ngRoute'
 ])
   .config(function ($routeProvider) {
@@ -71,6 +70,38 @@ angular.module('whateverApp', [
       .when('/carsearch', {
         templateUrl: 'views/carsearch.html',
         controller: 'CarsearchCtrl'
+      })
+      .when('/carsearch/:brandId/:priceId/:usedtimeId/:mileageId/:gearboxId', {
+        templateUrl: 'views/carindex.html',
+        controller: 'CarindexCtrl'
+      })
+      .when('/houseIndex', {
+        templateUrl: 'views/houseindex.html',
+        controller: 'HouseindexCtrl'
+      })
+      .when('/houseIndex/:communityId/:housing_typeId/:roomId/:areaId/:decorateId/:priceId/:regionId', {
+        templateUrl: 'views/houseindex.html',
+        controller: 'HouseindexCtrl'
+      })
+      .when('/houseDetail/:id', {
+        templateUrl: 'views/housedetail.html',
+        controller: 'HousedetailCtrl'
+      })
+      .when('/rentDetail/:id', {
+        templateUrl: 'views/rentdetail.html',
+        controller: 'RentdetailCtrl'
+      })
+      .when('/housesearch', {
+        templateUrl: 'views/housesearch.html',
+        controller: 'HousesearchCtrl'
+      })
+      .when('/housesearch/:brandId/:priceId/:usedtimeId/:mileageId/:gearboxId', {
+        templateUrl: 'views/houseindex.html',
+        controller: 'HouseindexCtrl'
+      })
+      .when('/cc', {
+        templateUrl: 'views/cc.html',
+        controller: 'CcCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -3,12 +3,17 @@
 angular.module('whateverApp')
 .directive('radioSet', function () {
     return {
-        templateUrl: "views/offcosUI/radioSet.html",
+        templateUrl: "views/offcosui/radioset.html",
         transclude: true,
         replace: true,
         restrict: 'E',
+        scope: {
+            data: "=",
+            value: "="
+        },
         controller: ["$scope", function($scope) {
             $scope.originValue = $scope.value;
+            $scope.selfValue = $scope.value;
             $scope.$on("selectionChange", function(e, selectedId) {
                 $scope.originValue = $scope.selfValue;
                 $scope.selfValue = selectedId;

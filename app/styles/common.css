@@ -1,6 +1,7 @@
-body, div, p, ol, ul, li, a {
+body, div, p, h1, h2, h3, h4, ol, ul, li, a {
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
 }
 
 ul, li {
@@ -15,6 +16,9 @@ body {
 
 a {
     text-decoration: none;
+}
+a:active {
+    background-color: rgba(0,0,0,0.1);
 }
 img {
     border: none;

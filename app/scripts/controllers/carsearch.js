@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('whateverApp')
-.controller('CarsearchCtrl', ["$scope", "Data", "dataUrl", "$routeParams", "$location", "$timeout", function ($scope, Data, url, $routeParams, $location, $timeout) {
+.controller('CarsearchCtrl', ["$scope", "Data", "dataUrl", "$routeParams", "$location", "$timeout", "Param", function ($scope, Data, url, $routeParams, $location, $timeout, Param) {
     var init = function () {
         Data.get(url.get_choose_info, {}, function(data) {
             $scope.data = data;
@@ -27,13 +27,8 @@ angular.module('whateverApp')
     var query = function() {
         var listScope = angular.element("ul").scope();
         var param = listScope.getValue();
-        var hash = "/carIndex" +
-            "/" + param.brandId +
-            "/" + param.priceId +
-            "/" + param.usedtimeId +
-            "/" + param.mileageId +
-            "/" + param.gearboxId;
-        $location.path(hash);
+        Param.set("param",param);
+        $location.path("/carIndex");
     };
     $scope.query = query;
 

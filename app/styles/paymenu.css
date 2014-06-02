@@ -1,10 +1,36 @@
 .pay-item {
-    margin: 10px;
+    margin: 7px;
     background-color: #eee;
     border-radius: 3px;
     border: solid 1px #ccc;
 }
 .pay-item a {
     display: block;
-    padding: 10px;
+    width: 306px;
+    height: 72px;
+    background-size: 306px 72px;
+}
+
+.pay-item .pay-intro {
+    background-image: url("icon/btn_fwjs.png");
+}
+
+.pay-item .pay-intro:active {
+    background-image: url("icon/btn_fwjs_active.png");
+}
+
+.pay-item .pay-service {
+    background-image: url("icon/btn_wyxy.png");
+}
+
+.pay-item .pay-service:active {
+    background-image: url("icon/btn_wyxy_active.png");
+}
+
+.pay-item .pay-payment {
+    background-image: url("icon/btn_wddd.png");
+}
+
+.pay-item .pay-payment:active {
+    background-image: url("icon/btn_wddd_active.png");
 }

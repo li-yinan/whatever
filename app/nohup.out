@@ -33,3 +33,25 @@ Error: listen EADDRINUSE
     at Object.Module._extensions..js (module.js:474:10)
 edp INFO EDP WebServer start, http://192.168.1.120:8848
 edp INFO root = [/Users/liyinan/dev/whatever/app], listen = [8848] 
+edp INFO EDP WebServer start, http://192.168.1.120:8848
+edp INFO root = [/Users/liyinan/dev/whatever/app], listen = [8848] 
+Checking edp update......
+info trying registry request attempt 1 at 12:09:17
+http GET https://registry.npmjs.org/edp
+http 304 https://registry.npmjs.org/edp
+=.= The latest edp version is `1.0.1`, please update your edp use `npm update -g edp`
+edp INFO EDP WebServer start, http://192.168.1.120:8848
+edp INFO root = [/Users/liyinan/dev/whatever/app], listen = [8848] 
+edp INFO EDP WebServer start, http://192.168.1.120:8848
+edp INFO root = [/Users/liyinan/dev/whatever/app], listen = [8848] 
+Checking edp update......
+info trying registry request attempt 1 at 13:34:06
+http GET https://registry.npmjs.org/edp
+info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+info trying registry request attempt 2 at 13:34:20
+http GET https://registry.npmjs.org/edp
+info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+info trying registry request attempt 3 at 13:35:20
+http GET https://registry.npmjs.org/edp
+http 304 https://registry.npmjs.org/edp
+=.= The latest edp version is `1.0.1`, please update your edp use `npm update -g edp`

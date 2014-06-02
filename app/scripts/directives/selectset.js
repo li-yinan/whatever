@@ -3,7 +3,7 @@
 angular.module('whateverApp')
 .directive('selectSet', function () {
     return {
-        templateUrl: "views/offcosUI/selectSet.html",
+        templateUrl: "views/offcosui/selectset.html",
         restrict: 'E',
         replace: true,
         transclude: true,
@@ -19,7 +19,6 @@ angular.module('whateverApp')
             };
 
             $scope.$on("onOk", function( e, value ) {
-                $scope.$emit("onselectionChange");
                 $scope.value = value;
                 $scope.data = $scope.data || [];
                 for( var i = 0; i< $scope.data.length; i++ ) {
@@ -27,16 +26,22 @@ angular.module('whateverApp')
                         $scope.text = $scope.data[ i ].text;
                     }
                 }
+                setTimeout(function() {
+                    $scope.$emit("onselectionChange");
+                }, 0)
             });
-
-            $scope.data = $scope.data || [];
-            for( var i = 0; i< $scope.data.length; i++ ) {
-                if( $scope.value == $scope.data[ i ].id ) {
-                    $scope.text = $scope.data[ i ].text;
+            var update = function() {
+                $scope.data = $scope.data || [];
+                for( var i = 0; i< $scope.data.length; i++ ) {
+                    if( $scope.value == $scope.data[ i ].id ) {
+                        $scope.text = $scope.data[ i ].text;
+                    }
                 }
             }
+            $scope.$watch("data", update);
+
         }],
-        link: function postLink(scope, element, attrs) {
+        link: function postLink($scope, element, attrs) {
         }
     };
 });

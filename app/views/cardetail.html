@@ -1,33 +1,150 @@
+<top-nav-bar type="back">
+二手车详情
+</top-nav-bar>
 <div class="car-detail">
     <div class="car-detail-title">
         {{data.title}}
     </div>
-    <div class="car-detail-info">
+    <div>
         <div class="car-detail-price">
-            <div>
+            <div class="car-detail-price-row1">
                 报价
             </div>
-            <div>
+            <div class="car-detail-price-row2">
                 {{data.price}}
             </div>
         </div>
-        <div>
+        <div class="car-detail-info">
             <div>
-                <span>里程：</span>
+                <span>行驶里程:</span>
                 <span>{{data.mileage}}</span>
             </div>
             <div>
-                <span>购买日期：</span>
+                <span>购买日期:</span>
                 <span>{{data.purchase_date}}</span>
             </div>
             <div>
-                <span>买时价格：</span>
+                <span>买时价格:</span>
                 <span>{{data.purchase_price}}</span>
             </div>
         </div>
     </div>
-    <div class="car-detail-pic">
-    </div>
+    <slider data="pic_list">
+    </slider>
     <div class="car-detail-detail-info">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="car-detail-table-title">
+                            变速箱:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.gearbox}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="car-detail-table-title">
+                            排气量:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.displacement}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="car-detail-table-title">
+                            颜色:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.colour}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="car-detail-table-title">
+                            排放标准:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.emission_standard}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="car-detail-table-title">
+                            年检到期:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.inspection_expire}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="car-detail-table-title">
+                            保养到期:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.maintain_expire}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="car-detail-table-title">
+                            保养情况:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.maintain_situation}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="car-detail-table-title">
+                            发布日期:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.date_issued}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="car-detail-table-title">
+                            乘坐人员:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.crew_num}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="car-detail-table-title">
+                            车身形式:
+                        </span>
+                        <span class="car-detail-table-content">
+                            {{data.body_model}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="car-detail-table-title">
+                            综合油耗:
+                        </span>
+                        <span class="car-detail-table-content-long">
+                            {{data.combined_MPG}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="car-detail-table-title">
+                            型号:
+                        </span>
+                        <span class="car-detail-table-content-long">
+                            {{data.type}}
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

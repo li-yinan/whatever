@@ -1,20 +1,13 @@
+<top-nav-bar type="back">
+新闻
+</top-nav-bar>
 <!-- slide news -->
-<div class="banner carousel">
-    <ul>
-        <li ng-class="{item:true,active:!$index}" ng-repeat="item in data.banner">
-            <a ng-href="#/picdetail/{{item.id}}">
-                <img ng-src="{{item.pic}}" style="height:{{item.height+'px'}}">
-            </a>
-            <div class="carousel-caption">
-                {{item.title}}
-            </div>
-        </li>
-    </ul>
-</div>
+<slider id="news-slider" data="data.banner" link="/picdetail">
+</slider>
 
 <!-- normal news -->
 <div class="normalNews">
-    <a ng-href="#/newsdetail/{{item.id}}" ng-repeat="item in data.normal">
+    <a class="normal-news-container" ng-href="#/newsdetail/{{item.id}}" ng-repeat="item in data.normal">
         <img class="" ng-src="{{item.pic}}"/>
         <div class="news-text">
             <h4>{{item.title}}</h4>
@@ -22,3 +15,5 @@
         </div>
     </a>
 </div>
+<bottom-nav-bar>
+</bottom-nav-bar>

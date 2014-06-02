@@ -3,12 +3,15 @@
     "statusInfo": "success",
     "data": [{
         "pic":"/images/dog.jpg",
+        "title":"标题标题标题",
         "text": "一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
     },{
         "pic":"/images/bg.png",
+        "title":"标题标题标题",
         "text": "一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
     },{
         "pic":"/mock/resource/a.jpg",
+        "title":"标题标题标题",
         "text": "一是注重讲道德，大力开展道德讲堂等活动。充分利用安源路矿工人"
     }]
 }

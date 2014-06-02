@@ -1,61 +1,67 @@
 /*
  * 登陆相关css
  */
+.login {
+    background-color: #f3f2f8;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
 
-.login * {
-    color: #5bafd3;
-    border-color: #5bafd3;
-}
-.login .login-row {
-    margin: 10px;
-}
-.login .login-title {
-    font-size: 24px;
+.login .logo {
+    background-image: url("icon/user.png");
+    background-repeat: no-repeat;
+    background-size: 119px 119px;
+    background-position: center;
+    margin-top: 32px;
+    height: 119px;
+    margin-bottom: 20px;
 }
 
 .login .username,
-.login .password {
-    font-size: 16px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    height: 3em;
-    line-height: 3em;
-    padding-left: 1em;
+.login .password
+{
+    width: 277px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 21px;
+    margin-bottom: 12px;
+    border: solid 1px #d5d5d5;
+    background-color: #fff;
 }
 
-.login .username span,
-.login .password span {
-    vertical-align: middle;
-}
 .login .username input,
-.login .password input {
+.login .password input
+{
     border: none;
     outline: none;
-    vertical-align: middle;
-    height: 1.2em;
-    line-height: 1.2em;
-    width: 10em;
+    background: transparent;
+    color: #5f6366;
+    height: 45px;
+    line-height: 45px;
 }
 
-.login .opr-login {
-    margin-top: 40px;
-}
-
-.login .opr-login a,
-.login .opr-register a {
-    font-size: 16px;
-    text-align: center;
-    height: 2em;
-    line-height: 2em;
+.login .username label,
+.login .password label {
+    margin-left: 14px;
     display: block;
-    width: 100%;
-    background-color: #5bafd3;
-    color: #fff;
-    border-radius: 5px;
 }
 
-.login .opr-login a:active,
-.login .opr-register a:active {
-    background-color: #166a8f;
+.login .opr-login,
+.login .opr-register {
+    width: 277px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 21px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.login .opr-login {
+    margin-top: 44px;
+    background-color: #63c51a;
+    color: #fff;
+}
+.login .opr-register {
+    border: solid 1px #ff9704;
+    background-color: #fff;
+    color: #ff9704;
 }

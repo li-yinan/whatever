@@ -1,63 +1,67 @@
-/*
- * 登陆相关css
- */
+.register {
+    background-color: #f3f2f8;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
 
-.register * {
-    color: #5bafd3;
-    border-color: #5bafd3;
-}
-.register .register-row {
-    margin: 10px;
-}
-.register .register-title {
-    font-size: 24px;
+.register .logo {
+    background-image: url("icon/user.png");
+    background-repeat: no-repeat;
+    background-size: 119px 119px;
+    background-position: center;
+    margin-top: 32px;
+    height: 119px;
+    margin-bottom: 20px;
 }
 
 .register .username,
 .register .password,
-.register .confirmPassword {
-    font-size: 16px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    height: 3em;
-    line-height: 3em;
-    padding-left: 1em;
+.register .confirmPassword
+{
+    width: 277px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 21px;
+    margin-bottom: 12px;
+    border: solid 1px #d5d5d5;
+    background-color: #fff;
 }
 
-.register .username span,
-.register .password span,
-.register .confirmPassword span {
-    vertical-align: middle;
-}
 .register .username input,
 .register .password input,
-.register .confirmPassword input {
+.register .confirmPassword input
+{
     border: none;
     outline: none;
-    vertical-align: middle;
-    height: 1.2em;
-    line-height: 1.2em;
-    width: 10em;
+    background: transparent;
+    color: #5f6366;
+    height: 45px;
+    line-height: 45px;
 }
 
-.register .opr-register {
-    margin-top: 40px;
-}
-
-.register .opr-register a {
-    font-size: 16px;
-    text-align: center;
-    height: 2em;
-    line-height: 2em;
+.register .username label,
+.register .password label,
+.register .confirmPassword label {
+    margin-left: 14px;
     display: block;
-    width: 100%;
-    background-color: #5bafd3;
-    color: #fff;
-    border-radius: 5px;
 }
 
-.register .opr-register a:active,
-.register .opr-register a:active {
-    background-color: #166a8f;
+.register .opr-register,
+.register .opr-register {
+    width: 277px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 21px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.register .opr-register {
+    margin-top: 44px;
+    background-color: #63c51a;
+    color: #fff;
+}
+.register .opr-register {
+    border: solid 1px #ff9704;
+    background-color: #fff;
+    color: #ff9704;
 }

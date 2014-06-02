@@ -1,23 +1,29 @@
+<top-nav-bar>
+上乘生活
+</top-nav-bar>
 <div class="login">
-    <div class="login-row login-title">
-        账号登陆
+    <div class="logo">
     </div>
-    <div class="login-row username">
+    <div class="username">
         <label>
             <span>昵称:</span>
             <input ng-model="username" placeholder="请输入昵称"/>
         </label>
     </div>
-    <div class="login-row password">
+    <div class="password">
         <label>
             <span>密码:</span>
-            <input ng-model="password" type="password"/>
+            <input ng-model="password" placeholder="请输入密码" type="password"/>
         </label>
     </div>
-    <div class="login-row opr-login">
-        <a ng-click="login()">登陆</a>
+    <div class="opr-login" ng-click="login()">
+        <a>登陆</a>
     </div>
-    <div class="login-row opr-register">
-        <a ng-click="register()">注册</a>
+    <div class="opr-register" ng-click="register()">
+        <a>注册</a>
     </div>
+    <dialog type="alert" id="alertMessage">
+    </dialog>
 </div>
+<bottom-nav-bar type="uc">
+</bottom-nav-bar>

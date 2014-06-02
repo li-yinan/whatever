@@ -17,21 +17,27 @@
     <link rel="stylesheet" href="styles/newsdetail.css">
     <link rel="stylesheet" href="styles/picdetail.css">
     <link rel="stylesheet" href="styles/scrollnews.css">
-    <link rel="stylesheet" href="styles/pay.css">
+    <link rel="stylesheet" href="styles/payindex.css">
     <link rel="stylesheet" href="styles/paymenu.css">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/register.css">
-    <link rel="stylesheet" href="styles/carIndex.css">
+    <link rel="stylesheet" href="styles/carindex.css">
     <link rel="stylesheet" href="styles/carsearch.css">
+    <link rel="stylesheet" href="styles/cardetail.css">
+    <link rel="stylesheet" href="styles/houseindex.css">
+    <link rel="stylesheet" href="styles/housesearch.css">
+    <link rel="stylesheet" href="styles/housedetail.css">
+    <link rel="stylesheet" href="styles/rentdetail.css">
+    <link rel="stylesheet" href="styles/cc.css">
     <!-- endbuild -->
-    <!-- build:css({.tmp,app}) styles/offcosUI/main.css -->
-    <link rel="stylesheet" href="styles/offcosUI/bottomnavbar.css">
-    <link rel="stylesheet" href="styles/offcosUI/topnavbar.css">
-    <link rel="stylesheet" href="styles/offcosUI/slider.css">
-    <link rel="stylesheet" href="styles/offcosUI/list.css">
-    <link rel="stylesheet" href="styles/offcosUI/radio.css">
-    <link rel="stylesheet" href="styles/offcosUI/selectset.css">
-    <link rel="stylesheet" href="styles/offcosUI/dialog.css">
+    <!-- build:css({.tmp,app}) styles/offcosui/main.css -->
+    <link rel="stylesheet" href="styles/offcosui/bottomnavbar.css">
+    <link rel="stylesheet" href="styles/offcosui/topnavbar.css">
+    <link rel="stylesheet" href="styles/offcosui/slider.css">
+    <link rel="stylesheet" href="styles/offcosui/list.css">
+    <link rel="stylesheet" href="styles/offcosui/radio.css">
+    <link rel="stylesheet" href="styles/offcosui/selectset.css">
+    <link rel="stylesheet" href="styles/offcosui/dialog.css">
     <!-- endbuild -->
     <script>
         (function() {
@@ -45,7 +51,9 @@
             document.addEventListener("deviceready", callback, false);
         })();
     </script>
+    <!--
     <script src="http://192.168.1.120:8080/target/target-script-min.js#anonymous"></script>
+    -->
   </head>
   <body ng-app="whateverApp">
     <div ng-view=""></div>
@@ -65,15 +73,16 @@
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
-    <script src="components/angular-sanitize/angular-sanitize.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
-    <script src="components/unslider/src/unslider.min.js"></script>
+    <script src="components/unslider/src/unslider.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
         <script>
             $(document).bind("mobileinit", function(){
                 $.mobile.ajaxEnabled = false;
                 $.mobile.autoInitializePage = false;
+                $.mobile.pushStateEnabled = false;
+                $.mobile.phonegapNavigationEnabled = false;
             });
         </script>
 
@@ -87,6 +96,7 @@
         <script src="scripts/controllers/test.js"></script>
         <script src="scripts/services/data.js"></script>
         <script src="scripts/services/url.js"></script>
+        <script src="scripts/services/queryParam.js"></script>
         <script src="scripts/controllers/picdetail.js"></script>
         <script src="scripts/controllers/ad.js"></script>
         <script src="scripts/controllers/paymenu.js"></script>
@@ -95,18 +105,23 @@
         <script src="scripts/controllers/payhistory.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/register.js"></script>
-        <script src="scripts/controllers/carIndex.js"></script>
-        <script src="scripts/controllers/carDetail.js"></script>
+        <script src="scripts/controllers/carindex.js"></script>
+        <script src="scripts/controllers/cardetail.js"></script>
         <script src="scripts/controllers/carsearch.js"></script>
-        <script src="scripts/directives/selectSet.js"></script>
+        <script src="scripts/controllers/houseindex.js"></script>
+        <script src="scripts/controllers/housedetail.js"></script>
+        <script src="scripts/controllers/rentdetail.js"></script>
+        <script src="scripts/controllers/housesearch.js"></script>
+        <script src="scripts/controllers/cc.js"></script>
+        <!-- endbuild -->
+        <script src="scripts/directives/selectset.js"></script>
         <script src="scripts/directives/dialog.js"></script>
-        <script src="scripts/directives/radioSet.js"></script>
-        <script src="scripts/directives/radioItem.js"></script>
-        <script src="scripts/directives/bottomNavBar.js"></script>
-        <script src="scripts/directives/topNavBar.js"></script>
+        <script src="scripts/directives/radioset.js"></script>
+        <script src="scripts/directives/radioitem.js"></script>
+        <script src="scripts/directives/bottomnavbar.js"></script>
+        <script src="scripts/directives/topnavbar.js"></script>
         <script src="scripts/directives/slider.js"></script>
         <script src="scripts/directives/list.js"></script>
-        <!-- endbuild -->
         <script>
             (function() {
                 //不支持viewport的手机尝试用zoom来修复

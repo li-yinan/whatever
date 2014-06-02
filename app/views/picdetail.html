@@ -1,22 +1,22 @@
+<top-nav-bar type="back">
+新闻
+</top-nav-bar>
 <!-- slide news -->
 <div id="picDetail">
-    <!-- Wrapper for slides -->
     <div class="pic-item" ng-repeat="item in data" ng-show="$index==showNum">
         <div class="img-container">
             <img ng-src="{{item.pic}}">
         <div>
         <div class="pic-describe">
-            {{$index+1}}/{{data.length}}  {{item.text}}
+            <div class="pic-row1">
+                <span class="pic-num">{{$index+1}}</span>
+                <span class="pic-num-split">/</span>
+                <span class="pic-total">{{data.length}}</span>
+                <span class="pic-title">{{item.title}}</span>
+            </div>
+            <div class="pic-row2">
+                <span class="pic-text">{{item.text}}</span>
+            </div>
         </div>
     </div>
-    <!--
-    <div class="operation">
-        <div class="arr left-arr" ng-click="clickLeft()">
-            <span></span>
-        </div>
-        <div class="arr right-arr" ng-click="clickRight()">
-            <span></span>
-        </div>
-    </div>
-    -->
 </div>

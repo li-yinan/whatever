@@ -7,18 +7,18 @@
 
 <div class="home-page">
     <div>
-        <!--
-        <a href="#/carsearch" class="icon-btn car">
-        -->
-        <a href="#/carIndex" class="icon-btn car"></a>
-        <a href="#/" class="icon-btn house"></a>
-        <a href="#/news" class="icon-btn news"></a>
-        <a href="#/" class="icon-btn dryclean"></a>
-        <a href="#/" class="icon-btn activity"></a>
-        <a href="#/" class="icon-btn entertainment"></a>
-        <a href="#/" class="icon-btn recruit"></a>
+        <a href="#/carIndex" class="icon-btn-1 car"></a>
+        <a href="#/houseIndex" class="icon-btn-1 house"></a>
+        <a href="#/news" class="icon-btn-2 news"></a>
+        <a href="#/payMenu" class="icon-btn-2 dryclean"></a>
+        <a href="#/" class="icon-btn-2 activity"></a>
+        <a href="#/" class="icon-btn-1 entertainment"></a>
+        <a href="#/" class="icon-btn-1 recruit"></a>
     </div>
     <div class="wide-pic" ng-repeat="item in pic_show_ad">
+        <!--
+        <a ng-href="#ad/{{item.id}}">
+        -->
         <a ng-href="#ad/{{item.id}}">
             <img ng-src="{{item.pic}}">
         </a>

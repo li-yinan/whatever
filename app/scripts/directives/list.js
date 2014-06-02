@@ -3,7 +3,7 @@
 angular.module('whateverApp')
 .directive('list', function () {
     return {
-        templateUrl: "views/offcosUI/list.html",
+        templateUrl: "views/offcosui/list.html",
         restrict: 'E',
         replace: true,
         transclude: true,

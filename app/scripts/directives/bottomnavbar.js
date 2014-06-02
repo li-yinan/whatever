@@ -3,7 +3,7 @@
 angular.module('whateverApp')
 .directive('bottomNavBar', function () {
     return {
-        templateUrl: "views/offcosUI/bottomNavBar.html",
+        templateUrl: "views/offcosui/bottomnavbar.html",
         restrict: 'E',
         replace: true,
         scope: {

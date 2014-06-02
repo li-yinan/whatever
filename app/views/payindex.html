@@ -1,5 +1,9 @@
+<top-nav-bar type="back">
+干洗
+</top-nav-bar>
 <!-- 选择代缴项目-->
 <div class="pay-index">
+    <!--
     <p class="pay-title">代缴项目<span>*</span></p>
     <div class="pay-type">
         <label>
@@ -11,36 +15,35 @@
             <span>电费</span>
         </label>
     </div>
+    -->
     <!--填写地址-->
-    <p class="pay-title">地址<span>*</span></p>
+    <p class="pay-title">地址</p>
     <div class="pay-addr">
-        <select disabled=true>
-            <option value="">安徽省</option>
-        </select>
-        <select disabled=true>
-            <option value="">宁国市</option>
-        </select>
-        <select ng-model="community" ng-options="m.communityName for m in communityList">
-        </select>
+        <div class="pay-prov">
+            <span>安徽省</span>
+            <span class="pay-select-icon"></span>
+        </div>
+        <div class="pay-city">
+            <span>宁国市</span>
+            <span class="pay-select-icon"></span>
+        </div>
+        <select-set data="communityList.data" title="communityList.label" value="communityList.value"></select-set>
+        <textarea class="pay-addr-text" ng-model="addr" placeholder="详细地址" required></textarea>
     </div>
-    <div class="pay-addr-text">
-        <textarea ng-model="addr" required></textarea>
+    <div>
     </div>
     <!--填写联系方式-->
-    <p class="pay-title">联系方式<span>*</span></p>
-    <div class="pay-contact-name">
-        <label>姓氏:<input ng-model="name"/></label>
-        <label><input type="radio" name="sex" ng-model="sex" checked="checked" value="1"/>先生</label>
-        <label><input type="radio" name="sex" ng-model="sex" value="2"/>女士</label>
-    </div>
-    <div class="pay-contact-phone">
-        <label>手机:<input ng-model="phone"/></label>
+    <p class="pay-title">联系方式</p>
+    <div class="pay-contact">
+        <input ng-model="name" placeholder="姓氏"/>
+        <radio-set class="pay-contact-sex" data="sexData" value="sex">
+        </radio-set>
+        <input ng-model="phone" class="phone" placeholder="手机号码"/>
     </div>
     <!--上门服务时间-->
-    <p class="pay-title">上门服务时间<span>*</span></p>
+    <p class="pay-title">上门服务时间</p>
     <div class="pay-time">
-        <select ng-model="time" ng-options="t.timeStr for t in timeList">
-        </select>
+        <select-set data="timeList.data" title="timeList.label" value="timeList.value"></select-set>
     </div>
     <!--留言-->
     <p class="pay-title">留言</p>
@@ -49,6 +52,8 @@
     </div>
     <!--提交-->
     <div class="pay-submit">
-        <input type="button" value="确认提交" ng-click="submit()"/>
+        <a ng-click="submit()">确认提交</a>
     </div>
+    <dialog type="alert" id="alertMessage">
+    </dialog>
 </div>

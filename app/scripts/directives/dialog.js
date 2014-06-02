@@ -3,7 +3,7 @@
 angular.module('whateverApp')
 .directive('dialog', function () {
     return {
-        templateUrl: "views/offcosUI/dialog.html",
+        templateUrl: "views/offcosui/dialog.html",
         restrict: 'E',
         replace: true,
         transclude: true,
@@ -15,7 +15,32 @@ angular.module('whateverApp')
                 $scope.selfValue = value;
             });
 
-            $scope.$on("opendialog", function () {
+            $scope.openDialog = function(message, okCb, cancelCb) {
+                if ( message ) {
+                    $scope.title = "提示";
+                    var html = '<div class="custom-message">' + message + '</div>';
+                    $element.find(".dialog-content").html(html);
+                }
+
+                if ( typeof okCb == "function" ) {
+                    $scope.alertOk = function() {
+                        okCb();
+                        delete $scope.alertOk;
+                    }
+                }
+
+                if ( typeof cancelCb == "function" ) {
+                    $scope.alertCancel = function() {
+                        cancelCb();
+                        delete $scope.alertCancel;
+                    }
+                }
+
+                $scope.$broadcast("onOpen");
+                $scope.isShow = true;
+            };
+
+            $scope.$on("opendialog", function() {
                 $scope.$broadcast("onOpen");
                 $scope.isShow = true;
             });
@@ -26,11 +51,17 @@ angular.module('whateverApp')
 
             $scope.onOk = function () {
                 $scope.$emit("onOk", $scope.selfValue);
+                if( $scope.alertOk ) {
+                    $scope.alertOk();
+                }
                 $scope.close();
             };
 
             $scope.onCancel = function () {
                 $scope.$emit("onCancel");
+                if( $scope.alertCancel ) {
+                    $scope.alertCancel();
+                }
                 $scope.close();
             };
 

@@ -3,7 +3,7 @@
 angular.module('whateverApp')
 .directive('radioItem', function () {
     return {
-        templateUrl: "views/offcosUI/radioItem.html",
+        templateUrl: "views/offcosui/radioitem.html",
         restrict: "E",
         require: "^radioSet",
         replace: true,

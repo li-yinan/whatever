@@ -1,14 +1,19 @@
 {
-    "status":0,
-    "statusInfo":"success",
-    "data":{
-        "dataList":[{
-            "timeId":"4",
-            "timeStr":"11:00 - 13:00"
-        },{
-            "timeId":"5",
-            "timeStr":"17:00 - 19:00"
-        }],
-        "defaultTime":"5"
+    "status": 0,
+    "statusInfo": "success",
+    "data": {
+        "data": [
+            {
+                "id": "6",
+                "text": "11:00 - 13:00"
+            },
+            {
+                "id": "7",
+                "text": "17:00 - 19:00"
+            }
+        ],
+        "value": "7",
+        "label": "服务时间",
+        "id": "timeId"
     }
 }
