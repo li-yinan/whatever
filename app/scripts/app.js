@@ -103,6 +103,38 @@ angular.module('whateverApp', [
         templateUrl: 'views/cc.html',
         controller: 'CcCtrl'
       })
+      .when('/pub', {
+        templateUrl: 'views/cc.html',
+        controller: 'CcCtrl'
+      })
+      .when('/usercenter', {
+        templateUrl: 'views/usercenter.html',
+        controller: 'UsercenterCtrl'
+      })
+      .when('/employee', {
+        templateUrl: 'views/employee.html',
+        controller: 'EmployeeCtrl'
+      })
+      .when('/recuitsearch', {
+        templateUrl: 'views/recuitsearch.html',
+        controller: 'RecuitsearchCtrl'
+      })
+      .when('/recuitdetail/:id', {
+        templateUrl: 'views/recuitdetail.html',
+        controller: 'RecuitdetailCtrl'
+      })
+      .when('/addetail/:id', {
+        templateUrl: 'views/addetail.html',
+        controller: 'AddetailCtrl'
+      })
+      .when('/activity', {
+        templateUrl: 'views/activity.html',
+        controller: 'ActivityCtrl'
+      })
+      .when('/activitydetail/:id', {
+        templateUrl: 'views/activitydetail.html',
+        controller: 'AdCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

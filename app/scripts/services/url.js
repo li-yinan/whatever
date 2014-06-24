@@ -33,7 +33,16 @@
             get_rent_choose_info: "/mock/get_rent_choose_info.json",
             get_result_count: "/mock/get_result_count.json",
             get_house_result_count: "/mock/get_house_result_count.json",
-            get_rent_result_count: "/mock/get_rent_result_count.json"
+            get_rent_result_count: "/mock/get_rent_result_count.json",
+            getPhone: "/mock/get_phone.json",
+            editPassword: "/mock/modify_pwd.json",
+            getRecuitList: "/mock/getRecuitList.json",
+            get_recuit_search_info: "/mock/get_recuit_search_info.json",
+            get_recuit_search_result_count: "/mock/get_recuit_search_result_count.json",
+            getRecuitDetail: "/mock/getRecuitDetail.json",
+            adDetail: "/mock/adDetail.json",
+            activity: "/mock/activity.json",
+            getLoginUserName: "/mock/get_user_name.json"
         });
         mod.value('remoteServerDomain',"http://" + location.host);
     } else {
@@ -69,7 +78,16 @@
             get_rent_choose_info: "/renting_house/get_choose_info.php",
             get_result_count: "/second_hand_car/get_result_count.php",
             get_house_result_count: "/second_hand_house/get_result_count.php",
-            get_rent_result_count: "/renting_house/get_result_count.php"
+            get_rent_result_count: "/renting_house/get_result_count.php",
+            getPhone: "/common/get_phone.php",
+            editPassword: "/landing/modify_pwd.php",
+            getRecuitList: "/recruitment/init.php",
+            get_recuit_search_info: "/recruitment/get_choose_info.php",
+            get_recuit_search_result_count: "/recruitment/get_result_count.php",
+            getRecuitDetail: "/recruitment/recruitment_info_details.php",
+            adDetail: "/activity/activity_info",
+            activity: "/activity/init.php",
+            getLoginUserName: "/personal_center/get_user_info.php"
         });
         mod.value('remoteServerDomain',"http://42.51.153.179");
     }

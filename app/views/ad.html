@@ -1,1 +1,15 @@
-<h1>广告页</h1>
+<top-nav-bar type="back">
+广告详情
+</top-nav-bar>
+<div class="ad-detail">
+    <img ng-src="{{data.pic}}">
+    <div class="container">
+        <div ng-repeat="item in data.info" class="item">
+            <span>{{item.key}}</span>
+            <span ng-class="{'orange':item.colour,'next-line':item.nextLine}">{{item.value}}</span>
+        </div>
+        <div class="copy-right">
+        温馨提示：活动最终解释权归商家所有
+        </div>
+    </div>
+</div>

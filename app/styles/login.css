@@ -38,6 +38,7 @@
     color: #5f6366;
     height: 45px;
     line-height: 45px;
+    vertical-align: middle;
 }
 
 .login .username label,

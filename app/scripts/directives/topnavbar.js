@@ -12,7 +12,7 @@ angular.module('whateverApp')
             searchurl: "@",
             url: "@"
         },
-        controller: [ "$scope", function ($scope) {
+        controller: [ "$scope", "Param", function ($scope, Param) {
             $scope.href = $scope.url || "javascript:history.go(-1)";
         } ],
         link: function postLink(scope, element, attrs) {
