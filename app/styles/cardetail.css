@@ -1,0 +1,74 @@
+.car-detail {
+}
+
+.car-detail-title {
+    font-size: 16px;
+    line-height: 3em;
+    height: 3em;
+    margin-left: 20px;
+}
+
+.car-detail-info div {
+    margin-top: -2px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 24px;
+}
+
+.car-detail-price {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    width: 124px;
+    height: 58px;
+    font-size: 18px;
+    text-align: center;
+    border: solid 1px #dadbdd;
+    background-color: #f6f6f4;
+}
+.car-detail-price-row1 {
+    line-height: 30px;
+    height: 30px;
+}
+.car-detail-price-row2 {
+    font-size: 22px;
+    color: #e7005c;
+}
+.car-detail-detail-info {
+    overflow: hidden;
+}
+.car-detail-detail-info table {
+    border-collapse: collapse;
+    border: solid 1px #d1d1d1;
+    width: 322px;
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: 12px;
+}
+.car-detail-detail-info table th,
+.car-detail-detail-info table td {
+    border: solid 1px #d1d1d1;
+}
+.car-detail-detail-info table td {
+    height: 44px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.car-detail-detail-info table .car-detail-table-title {
+    display: inline-block;
+    color: #9f9f9f;
+    width: 65px;
+    vertical-align: middle;
+}
+.car-detail-detail-info table .car-detail-table-content {
+    display: inline-block;
+    width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.car-detail-detail-info table .car-detail-table-content-long {
+    width: 220px;
+    white-space: normal;
+}

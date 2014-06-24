@@ -1,0 +1,38 @@
+.activity-page {
+    overflow: hidden;
+}
+
+.activity-page .wide-pic {
+    margin-top: 5px;
+    position: relative;
+}
+
+.activity-page .wide-pic img {
+    width: 320px;
+}
+
+.activity-page .spec {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.activity-page .jian {
+    background-image: url(icon/jian.png);
+    background-size: 27px 37px;
+    width: 27px;
+    height: 37px;
+}
+
+.activity-page .new {
+    background-image: url(icon/new.png);
+    background-size: 44px 44px;
+    width: 44px;
+    height: 44px;
+}
+
+.activity-page .slider .dots {
+    float: right;
+    margin-right: 6px;
+    left: auto;
+}

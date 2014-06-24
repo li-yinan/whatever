@@ -1,0 +1,27 @@
+.ad-detail img {
+    width: 320px;
+    height: auto;
+}
+
+.ad-detail .orange {
+    color: #feb044;
+}
+
+.ad-detail .next-line {
+    display: block;
+}
+
+.ad-detail .container {
+    padding: 18px 21px;
+}
+
+.ad-detail .item {
+    margin-bottom: 10px;
+}
+
+.ad-detail .copy-right {
+    text-align: center;
+    font-size: 9px;
+    color: #feb044;
+    margin-top: 40px;
+}

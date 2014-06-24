@@ -1,0 +1,44 @@
+.custom-service {
+    background-color: #f3f2f8;
+    overflow: hidden;
+    padding-bottom: 90px;
+    margin-bottom: -90px;
+    position: relative;
+}
+
+.custom-service .logo {
+    background-image: url("icon/icon_user_kefu.png");
+    background-repeat: no-repeat;
+    background-size: 119px 119px;
+    background-position: center;
+    margin-top: 32px;
+    height: 119px;
+    margin-bottom: 176px;
+}
+
+.custom-service .text {
+    position: absolute;
+    top: 176px;
+    width: 277px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 21px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #606467;
+}
+
+.custom-service .opr-dial {
+    display: block;
+    width: 277px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 21px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.custom-service .opr-dial {
+    margin-top: 44px;
+    background-color: #63c51a;
+    color: #fff;
+}

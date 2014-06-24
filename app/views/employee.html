@@ -1,0 +1,22 @@
+<top-nav-bar type="search" searchurl="#/recuitsearch">
+招聘
+</top-nav-bar>
+<div class="recuit">
+    <list>
+        <a ng-href="#/recuitdetail/{{item.id}}">
+            <div class="recuit-name">
+                {{item.job}}
+            </div>
+            <div class="recuit-company">
+                {{item.companyName}}
+                <span class="recuit-date">{{item.releaseTime}}</span>
+            </div>
+            <div class="recuit-money">
+                {{item.salary}}
+                <span class="recuit-position">{{item.region}}</span>
+            </div>
+        <a>
+    </list>
+</div>
+<bottom-nav-bar type="">
+</bottom-nav-bar>

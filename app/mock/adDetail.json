@@ -1,0 +1,13 @@
+{
+    "status":0,
+    "statusInfo":"success",
+    "data":{
+        "pic":"...",
+        "info":[
+        {
+            "key":"活动时间：","value":"6.22-7.22","colour":1,"nextLine":0},
+        {
+            "key":"活动简介：","value":".....","colour":0,"nextLine":1}
+        ]
+    }
+}

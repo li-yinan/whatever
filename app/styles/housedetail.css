@@ -1,0 +1,96 @@
+.house-detail {
+}
+
+.house-detail-title {
+    font-size: 16px;
+    line-height: 3em;
+    height: 3em;
+    margin-left: 20px;
+}
+.house-detail-attr {
+    height: 36px;
+    line-height: 36px;
+    margin-left: 20px;
+    font-size: 14px;
+    border-top: solid 1px #e7e7e7;
+    border-bottom: solid 1px #e7e7e7;
+    margin-bottom: 14px;
+    color: #afafaf;
+}
+
+.house-detail-housing-type {
+    color: #67c41b;
+}
+
+.house-detail-decorate {
+    color: #e8015d;
+}
+
+.house-detail-toward {
+    color: #ff9604;
+}
+
+.house-detail-info div {
+    margin-top: -2px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 24px;
+}
+
+.house-detail-price {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    width: 124px;
+    height: 58px;
+    font-size: 18px;
+    text-align: center;
+    border: solid 1px #dadbdd;
+    background-color: #f6f6f4;
+}
+.house-detail-price-row1 {
+    line-height: 30px;
+    height: 30px;
+}
+.house-detail-price-row2 {
+    font-size: 22px;
+    color: #e7005c;
+}
+.house-detail-detail-info {
+    overflow: hidden;
+}
+.house-detail-detail-info table {
+    border-collapse: collapse;
+    border: solid 1px #d1d1d1;
+    width: 322px;
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: 12px;
+}
+.house-detail-detail-info table th,
+.house-detail-detail-info table td {
+    border: solid 1px #d1d1d1;
+}
+.house-detail-detail-info table td {
+    height: 44px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.house-detail-detail-info table .house-detail-table-title {
+    display: inline-block;
+    color: #9f9f9f;
+    width: 65px;
+    vertical-align: middle;
+}
+.house-detail-detail-info table .house-detail-table-content {
+    display: inline-block;
+    width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.house-detail-detail-info table .house-detail-table-content-long {
+    width: 220px;
+    white-space: normal;
+}

@@ -1,0 +1,150 @@
+{
+    "status": 0,
+    "statusInfo": "success",
+    "data": [
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/615f47b82e7f984ed99d01d5581bd8a9.jpg",
+            "housing_type": "商品房",
+            "community": "法姬娜",
+            "room": "二室一厅",
+            "area": "110平米",
+            "decorate": "精装",
+            "price": "￥48.8万",
+            "region": "五里铺",
+            "id": "1",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=1"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/8186ff456ec6c9f895c2247b17eb3945.jpg",
+            "housing_type": "门面房",
+            "community": "无",
+            "room": "一室",
+            "area": "25平米",
+            "decorate": "简装",
+            "price": "￥30万",
+            "region": "城东路",
+            "id": "2",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=2"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/5e7a00bf365b7ae5e88750a63c3ceed2.jpg",
+            "housing_type": "车库",
+            "community": "润城",
+            "room": "一室",
+            "area": "10平米",
+            "decorate": "毛坯",
+            "price": "￥1万",
+            "region": "五里铺",
+            "id": "3",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=3"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/615f47b82e7f984ed99d01d5581bd8a9.jpg",
+            "housing_type": "商品房",
+            "community": "法姬娜",
+            "room": "二室一厅",
+            "area": "110平米",
+            "decorate": "精装",
+            "price": "￥48.8万",
+            "region": "五里铺",
+            "id": "4",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=4"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/8186ff456ec6c9f895c2247b17eb3945.jpg",
+            "housing_type": "门面房",
+            "community": "无",
+            "room": "一室",
+            "area": "25平米",
+            "decorate": "简装",
+            "price": "￥30万",
+            "region": "城东路",
+            "id": "5",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=5"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/5e7a00bf365b7ae5e88750a63c3ceed2.jpg",
+            "housing_type": "车库",
+            "community": "润城",
+            "room": "一室",
+            "area": "10平米",
+            "decorate": "毛坯",
+            "price": "￥1万",
+            "region": "五里铺",
+            "id": "6",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=6"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/615f47b82e7f984ed99d01d5581bd8a9.jpg",
+            "housing_type": "商品房",
+            "community": "法姬娜",
+            "room": "二室一厅",
+            "area": "110平米",
+            "decorate": "精装",
+            "price": "￥48.8万",
+            "region": "五里铺",
+            "id": "7",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=7"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/8186ff456ec6c9f895c2247b17eb3945.jpg",
+            "housing_type": "门面房",
+            "community": "无",
+            "room": "一室",
+            "area": "25平米",
+            "decorate": "简装",
+            "price": "￥30万",
+            "region": "城东路",
+            "id": "8",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=8"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/5e7a00bf365b7ae5e88750a63c3ceed2.jpg",
+            "housing_type": "车库",
+            "community": "润城",
+            "room": "一室",
+            "area": "10平米",
+            "decorate": "毛坯",
+            "price": "￥1万",
+            "region": "五里铺",
+            "id": "9",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=9"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/615f47b82e7f984ed99d01d5581bd8a9.jpg",
+            "housing_type": "商品房",
+            "community": "法姬娜",
+            "room": "二室一厅",
+            "area": "110平米",
+            "decorate": "精装",
+            "price": "￥48.8万",
+            "region": "五里铺",
+            "id": "10",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=10"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/8186ff456ec6c9f895c2247b17eb3945.jpg",
+            "housing_type": "门面房",
+            "community": "无",
+            "room": "一室",
+            "area": "25平米",
+            "decorate": "简装",
+            "price": "￥30万",
+            "region": "城东路",
+            "id": "11",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=11"
+        },
+        {
+            "pic": "http://42.51.153.179/second_hand_house/pic/20140518/5e7a00bf365b7ae5e88750a63c3ceed2.jpg",
+            "housing_type": "车库",
+            "community": "润城",
+            "room": "一室",
+            "area": "10平米",
+            "decorate": "毛坯",
+            "price": "￥1万",
+            "region": "五里铺",
+            "id": "12",
+            "url": "http://42.51.153.179/second_hand_house/second_hand_house_info_details.php?id=12"
+        }
+    ]
+}

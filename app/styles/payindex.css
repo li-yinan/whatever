@@ -1,0 +1,120 @@
+.pay-index {
+}
+
+.pay-index .pay-title {
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    vertical-align: middle;
+    background-color: #d1d1d1;
+    color: #272727;
+    padding-left: 14px;
+}
+
+.pay-index .pay-addr,
+.pay-index .pay-contact,
+.pay-index .pay-time,
+.pay-index .pay-message {
+    padding: 14px;
+}
+
+.pay-index .pay-prov,
+.pay-index .pay-city,
+.pay-index .select-set {
+    border:solid 1px #d6d6d6;
+    float: left;
+    width: 79px;
+    height: 36px;
+    padding-left: 13px;
+    line-height: 36px;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+}
+.pay-index .pay-prov,
+.pay-index .pay-city {
+    margin-right: 5px;
+}
+
+.pay-index .pay-select-icon,
+.pay-index .select-set .icon {
+    background-image: url("icon/select.png");
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    width: 12px;
+    height: 8px;
+    background-size: 12px 8px;
+}
+
+.pay-index .select-set .text {
+    float: none;
+    display: inline-block;
+}
+
+.pay-index .pay-addr-text {
+    width: 286px;
+    resize: none;
+    margin-top: 7px;
+    height: 3em;
+    font-size: 14px;
+    border:solid 1px #d6d6d6;
+}
+
+.pay-index .pay-contact,
+.pay-index .pay-time {
+    overflow: hidden;
+}
+
+.pay-index .pay-contact input {
+    height: 36px;
+    width: 122px;
+    padding-left: 13px;
+    line-height: 36px;
+    font-size: 14px;
+    border:solid 1px #d6d6d6;
+    float: left;
+}
+
+.pay-index .pay-contact .phone {
+    width: 274px;
+    margin-top: 7px;
+}
+
+.pay-index .pay-contact-sex {
+    float: left;
+}
+
+.pay-index .pay-contact-sex .radio-item {
+    float: left;
+    background-position: 12px 8px;
+    padding-left: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.pay-index .pay-time .select-set {
+    width: 133px;
+}
+
+.pay-index .pay-message textarea {
+    width: 286px;
+    resize: none;
+    height: 3em;
+    font-size: 14px;
+    border:solid 1px #d6d6d6;
+}
+
+.pay-index .pay-submit {
+    padding: 0 14px;
+}
+.pay-index .pay-submit a {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #63c51a;
+    height: 45px;
+    line-height: 45px;
+}

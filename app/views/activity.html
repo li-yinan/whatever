@@ -1,0 +1,16 @@
+<top-nav-bar type="back">
+活动
+</top-nav-bar>
+<div class="activity-page">
+    <slider data="pic_ad" link="activitydetail">
+    </slider>
+    <div class="wide-pic" ng-repeat="item in pic_show_ad">
+        <a ng-href="#activitydetail/{{item.id}}">
+            <img ng-src="{{item.pic}}">
+        </a>
+        <div class="spec" ng-class="{'jian':item.type==1,'new':item.type==2}">
+        </div>
+    </div>
+</div>
+<bottom-nav-bar>
+</bottom-nav-bar>

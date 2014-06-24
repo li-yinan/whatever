@@ -1,0 +1,15 @@
+<top-nav-bar type="back">
+搜索
+</top-nav-bar>
+<div class="house-search" data="data">
+    <list type="arr">
+        <select-set data="item.data" title="item.label" value="item.value"></select-set>
+    </list>
+    <div class="house-search-total">
+        共有{{total}}条相关房源信息
+    </div>
+    <div class="house-search-operation">
+        <a class="house-search-clear" ng-click="clear()">清空</a>
+        <a class="house-search-query" ng-click="query()">查询</a>
+    </div>
+</div>

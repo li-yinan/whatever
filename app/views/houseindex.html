@@ -1,0 +1,38 @@
+<top-nav-bar
+    type="search"
+    url="#/home"
+    searchurl="#/housesearch"
+    >
+二手房
+</top-nav-bar>
+<div class="house-index">
+    <div class="house-index-tab">
+        <a ng-class="{cur:cur=='tab1'}" ng-click="clickTab1()">二手房</a>
+        <a ng-class="{cur:cur=='tab2'}" ng-click="clickTab2()">租房</a>
+    </div>
+    <div class="house-query-result">
+        <div ng-show="!result.length" class="house-query-no-result">
+        无结果
+        </div>
+        <a href="#/{{type}}/{{item.id}}" class="house-item" ng-repeat="item in result">
+            <div class="house-item-img-container">
+                <img ng-src="{{item.pic}}">
+            </div>
+            <div class="house-info-row1">
+                <span>{{item.community}}</span>
+                <span>{{item.housing_type}}</span>
+            </div>
+            <div class="house-info-row2">
+                <span>{{item.room}}</span>
+                <span>{{item.area}}</span>
+                <span>{{item.decorate}}</span>
+            </div>
+            <div class="house-info-row3">
+                <span>{{item.price}}</span>
+                <span class="house-info-area">{{item.region}}</span>
+            </div>
+        </a>
+    </div>
+</div>
+<bottom-nav-bar>
+</bottom-nav-bar>

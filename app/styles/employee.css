@@ -1,0 +1,28 @@
+.recuit {
+    padding: 15px;
+}
+.recuit-name {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.recuit-company {
+    font-size: 14px;
+    color: #5f6366;
+    margin-bottom: 10px;
+}
+.recuit-date {
+    float: right;
+}
+.recuit-money {
+    color: #e7005c;
+}
+.recuit-position {
+    float: right;
+    color: #898a8c;
+}
+.recuit .list .list-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+}

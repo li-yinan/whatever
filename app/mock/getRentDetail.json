@@ -1,0 +1,30 @@
+{
+    "status": 0,
+    "statusInfo": "success",
+    "data": {
+        "housing_type": "商品房",
+        "community": "法姬娜",
+        "room": "二室一厅",
+        "area": "110平米",
+        "decorate": "精装",
+        "price": "￥1200元",
+        "region": "五里铺",
+        "title": "法姬娜精装修房",
+        "payment_method": "押一付三",
+        "facilities": "家具齐全，包括：电视、沙发等",
+        "floor": "3楼/6层",
+        "toward": "朝南",
+        "time": "2010年",
+        "address": "开发区化肥厂对面",
+        "contact": "联系客服",
+        "characteristics": "精装修，价格低，业主诚心出租",
+        "pic_list": [
+            "http://42.51.153.179/renting_house/pic/20140518/affd7fdcce46cd7290af09f1eb2f108f.jpg",
+            "http://42.51.153.179/renting_house/pic/20140518/9890e18518dcc126d30614362c21d779.jpg",
+            "http://42.51.153.179/renting_house/pic/20140518/f7e57a54924e6ccd65eec91b0a78cd48.jpg",
+            "http://42.51.153.179/renting_house/pic/20140518/9ab86542cdfc8f14fec6062070383d46.jpg",
+            "http://42.51.153.179/renting_house/pic/20140518/ba8d6c6f4ce370879b846f0ba0c45269.jpg",
+            "http://42.51.153.179/renting_house/pic/20140518/1d9b11554241fc5b36f3290728e90379.jpg"
+        ]
+    }
+}

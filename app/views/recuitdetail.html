@@ -1,0 +1,103 @@
+<top-nav-bar type="back">
+招聘详情
+</top-nav-bar>
+<div class="recuit-detail">
+    <div class="house-index-tab">
+        <a ng-class="{cur:cur=='tab1'}" ng-click="cur='tab1'">职位详情</a>
+        <a ng-class="{cur:cur=='tab2'}" ng-click="cur='tab2'">企业信息</a>
+    </div>
+    <div class="recuit-detail-detail-info" ng-hide="cur!='tab1'">
+        <div class="recuit-detail-job">
+            {{data.job}}
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="recuit-detail-table-title">
+                            发布日期:
+                        </span>
+                        <span class="recuit-detail-table-content">
+                            {{data.releaseTime}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="recuit-detail-table-title">
+                            学历要求:
+                        </span>
+                        <span class="recuit-detail-table-content">
+                            {{data.educationBackground}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="recuit-detail-table-title">
+                            截止日期:
+                        </span>
+                        <span class="recuit-detail-table-content">
+                            {{data.endTime}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="recuit-detail-table-title">
+                            招聘人数:
+                        </span>
+                        <span class="recuit-detail-table-content">
+                            {{data.recruitingNumbers}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="recuit-detail-table-title">
+                            工作地点:
+                        </span>
+                        <span class="recuit-detail-table-content">
+                            {{data.region}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="recuit-detail-table-title">
+                            工作经验:
+                        </span>
+                        <span class="recuit-detail-table-content">
+                            {{data.workExperience}}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="recuit-detail-table-title">
+                            薪资:
+                        </span>
+                        <span class="recuit-detail-table-content">
+                            {{data.salary}}
+                        </span>
+                    </td>
+                    <td>
+                        <span class="recuit-detail-table-title">
+                            年龄要求:
+                        </span>
+                        <span class="recuit-detail-table-content">
+                            {{data.age}}
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="recuit-detail-descibe">
+        职位描述
+        </div>
+        <pre>{{data.jobInfo}}</pre>
+        <a class="btn" ng-click="applyJob()">
+            申请该职位
+        </a>
+    </div>
+    <div ng-hide="cur!='tab2'">
+        <div class="recuit-detail-company-name">
+        {{data.companyName}}
+        </div>
+        <pre>{{data.companyInfo}}</pre>
+    </div>
+</div>

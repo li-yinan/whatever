@@ -1,0 +1,67 @@
+.user-center {
+}
+
+.user-center .row1 {
+    overflow: hidden;
+}
+
+.user-center .row1 .logo {
+    float: left;
+    margin: 12px;
+    height: 50px;
+    width: 50px;
+    background-image: url("icon/icon_user_wdl.png");
+    background-size: 50px 50px;
+}
+
+.user-center .row1 .username {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.user-center .row1 .logout {
+    float: right;
+    margin: 21px 15px;
+    height: 38px;
+    line-height: 38px;
+    width: 72px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #63c51a;
+}
+
+.user-center .row1 .logout:active {
+    background-color: #54a716;
+}
+
+.user-center .row1 .logout .exit {
+    float: left;
+    height: 18px;
+    width: 18px;
+    margin: 10px 5px 5px 12px;
+    background-image: url("icon/icon_exit.png");
+    background-size: 18px 18px;
+}
+
+.user-center .item div {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 23px;
+    color: #000;
+}
+
+.user-center .list {
+    border-top: solid 1px #d1d1d1;
+}
+
+.edit-pwd-layer input {
+    display: block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 12px;
+    margin-left: 21px;
+    margin-bottom: 12px;
+    border: solid 1px #d5d5d5;
+    background-color: #fff;
+}

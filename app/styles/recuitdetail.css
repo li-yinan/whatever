@@ -1,0 +1,105 @@
+.recuit-detail {
+}
+
+.recuit-detail-title {
+    font-size: 16px;
+    line-height: 3em;
+    height: 3em;
+    margin-left: 20px;
+}
+
+.recuit-detail-info div {
+    margin-top: -2px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 24px;
+}
+
+.recuit-detail-price {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    width: 124px;
+    height: 58px;
+    font-size: 18px;
+    text-align: center;
+    border: solid 1px #dadbdd;
+    background-color: #f6f6f4;
+}
+.recuit-detail-price-row1 {
+    line-height: 30px;
+    height: 30px;
+}
+.recuit-detail-price-row2 {
+    font-size: 22px;
+    color: #e7005c;
+}
+.recuit-detail-detail-info {
+    overflow: hidden;
+}
+.recuit-detail-detail-info table {
+    border-collapse: collapse;
+    border: solid 1px #d1d1d1;
+    width: 322px;
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: 12px;
+}
+.recuit-detail-detail-info table th,
+.recuit-detail-detail-info table td {
+    border: solid 1px #d1d1d1;
+}
+.recuit-detail-detail-info table td {
+    height: 44px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.recuit-detail-detail-info table .recuit-detail-table-title {
+    display: inline-block;
+    color: #9f9f9f;
+    width: 65px;
+    vertical-align: middle;
+}
+.recuit-detail-detail-info table .recuit-detail-table-content {
+    display: inline-block;
+    width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.recuit-detail-detail-info table .recuit-detail-table-content-long {
+    width: 220px;
+    white-space: normal;
+}
+
+.recuit-detail-job {
+    color: #ea015d;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+.recuit-detail pre {
+    word-break: break-word;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.recuit-detail-descibe {
+    font-size: 16px;
+    margin: 12px;
+}
+.recuit-detail .btn {
+    display: block;
+    width: 284px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    margin-left: 18px;
+    background-color: #54a717;
+}
+.recuit-detail-company-name {
+    font-size: 16px;
+    margin: 12px;
+}
